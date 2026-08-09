@@ -1,0 +1,145 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Label, SectionHeader, DimensionRule } from "@/components/site/Technical";
+import { Discipline } from "@/features/home/components/Discipline";
+import { images, projects, detailSamples, NAME, thumbnailBackdoor, thumbnailBackend, thumbnailEcom } from "@/data/portfolio";
+
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: `${NAME} — Architecture, Graphics & Video Portfolio` },
+      {
+        name: "description",
+        content:
+          "Multidisciplinary creative portfolio: architectural design and drawings, graphic design and illustration, and long- and short-form video work.",
+      },
+      { property: "og:title", content: `${NAME} — Architecture, Graphics & Video` },
+      {
+        property: "og:description",
+        content:
+          "Designing spaces, visuals and stories. Architecture, graphic design and video/content creation portfolio.",
+      },
+    ],
+  }),
+  component: Home,
+});
+
+function Home() {
+  return (
+    <>
+      <section className="relative overflow-hidden border-b border-hairline">
+        <div className="blueprint-grid pointer-events-none absolute inset-0 opacity-60" />
+        <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-px bg-hairline lg:block" />
+
+        <div className="relative mx-auto grid max-w-[1600px] gap-14 px-5 pb-20 pt-16 sm:px-8 lg:grid-cols-[3fr_1fr] lg:gap-16 lg:px-12 lg:pb-28 lg:pt-24">
+          <div className="reveal min-w-0">
+            <div className="flex flex-wrap items-center gap-4">
+              <Label accent>ARCH · GFX · VIDEO / 001</Label>
+              <span className="h-px w-16 bg-accent" />
+              <Label>E-Portfolio 2026</Label>
+            </div>
+
+            <h1 className="display mt-10 text-[clamp(2.75rem,8vw,6.5rem)]">
+              Designing spaces,
+              <br />
+              visuals, and
+              <br />
+              <span className="text-muted-foreground">stories.</span>
+            </h1>
+
+            <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              I&apos;m {NAME} — a Filipino architect, 3D visualizer, creative designer,
+              illustrator, and multimedia designer based in Bataan, Philippines. I&apos;m a
+              passionate freelance architect and co-founder of HACARA+ Architects, dedicated
+              to creating transformative designs that enhance people&apos;s lives and
+              contribute to the productivity and efficiency of businesses.
+            </p>
+
+            <div className="mt-12 flex flex-wrap gap-4">
+              <Link
+                to="/architecture"
+                className="label border border-foreground bg-foreground px-8 py-4 text-primary-foreground transition-colors hover:border-accent hover:bg-accent"
+              >
+                View Portfolio
+              </Link>
+              <Link
+                to="/contact"
+                className="label border border-hairline px-8 py-4 text-foreground transition-colors hover:border-accent hover:text-accent"
+              >
+                Let&apos;s Work Together
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative min-w-0">
+            <div className="relative h-[400px]">
+              <div className="absolute left-0 top-0 animate-float">
+                <div className="border border-hairline bg-background px-6 py-4 shadow-lg">
+                  <Label accent>Architecture</Label>
+                  <p className="label mt-2 text-xs text-muted-foreground">
+                    Design · Documentation · Details
+                  </p>
+                </div>
+              </div>
+              <div className="absolute right-8 top-16 animate-float-delayed">
+                <div className="border border-hairline bg-background px-6 py-4 shadow-lg">
+                  <Label accent>Graphics</Label>
+                  <p className="label mt-2 text-xs text-muted-foreground">
+                    Illustration · Brand · Editorial
+                  </p>
+                </div>
+              </div>
+              <div className="absolute left-12 bottom-8 animate-float-slow">
+                <div className="border border-hairline bg-background px-6 py-4 shadow-lg">
+                  <Label accent>Video</Label>
+                  <p className="label mt-2 text-xs text-muted-foreground">
+                    Editing · Motion · Content
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Discipline
+        index="01 / ARCHITECTURE"
+        title="Architectural Detail Samples & Projects"
+        copy="Technical drawings, construction details, plans and sections alongside larger design projects presented as full case studies."
+        cta="Explore Architecture"
+        to="/architecture"
+        items={[
+          { image: projects[0]!.cover, caption: projects[0]!.name },
+          { image: detailSamples[0]!.image, caption: detailSamples[0]!.title },
+          { image: detailSamples[2]!.image, caption: detailSamples[2]!.title },
+        ]}
+      />
+
+      <Discipline
+        index="02 / GRAPHICS"
+        title="Graphics, Illustrations & Thumbnails"
+        copy="The Graphics & Illustrations portfolio, content work for Black Rose Content Creators, GFX samples and thumbnail design."
+        cta="Explore Graphics"
+        to="/graphics"
+        reverse
+        items={[
+          { image: images.graphicsCover, caption: "Portfolio Cover" },
+          { image: images.gfx01, caption: "Geometric Composition" },
+          { image: images.gfx02, caption: "Torn Paper Study" },
+        ]}
+      />
+
+      <Discipline
+        index="03 / VIDEO"
+        title="Long Form & Short Form Content"
+        copy="Documentary edits, architecture films and brand content, plus vertical short-form work for reels, shorts and TikTok."
+        cta="Explore Video"
+        to="/video"
+        items={[
+          { image: thumbnailBackdoor, caption: "Backdoor Gastropub" },
+          { image: thumbnailBackend, caption: "Black Rose Event" },
+          { image: thumbnailEcom, caption: "ECOM City" },
+        ]}
+      />
+    </>
+  );
+}
