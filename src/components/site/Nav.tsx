@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
 import { NAME } from "@/data/portfolio";
 
 const links = [
@@ -12,12 +11,10 @@ const links = [
 ] as const;
 
 export function Nav() {
-  const [open, setOpen] = useState(false);
-
   return (
-    <header className="sticky top-0 z-50 border-b border-hairline bg-background/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-hairline bg-background">
       <div className="mx-auto grid max-w-[1600px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:px-8 lg:px-12">
-        <Link to="/" className="min-w-0" onClick={() => setOpen(false)}>
+        <Link to="/" className="min-w-0">
           <span className="display block truncate text-sm uppercase tracking-[0.2em]">
             {NAME}
           </span>
@@ -31,41 +28,18 @@ export function Nav() {
             <Link
               key={l.to}
               to={l.to}
-              className="label link-underline text-muted-foreground transition-colors hover:text-foreground"
-              activeProps={{ className: "label link-underline text-foreground" }}
+              className="label link-underline text-muted-foreground hover:text-foreground"
+              activeProps={{ className: "label link-underline text-foreground active-nav" }}
             >
               <span className="text-accent">{l.num}</span> / {l.label}
             </Link>
           ))}
         </nav>
 
-        <button
-          type="button"
-          aria-label="Toggle menu"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="label shrink-0 border border-hairline px-4 py-3 text-foreground transition-colors hover:border-accent hover:text-accent lg:hidden"
-        >
-          {open ? "Close" : "Menu"}
-        </button>
+        <div className="lg:hidden">
+          <span className="label">Menu</span>
+        </div>
       </div>
-
-      {open ? (
-        <nav className="border-t border-hairline lg:hidden">
-          {links.map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
-              onClick={() => setOpen(false)}
-              className="flex items-baseline gap-4 border-b border-hairline px-5 py-5 sm:px-8"
-              activeProps={{ className: "text-accent" }}
-            >
-              <span className="label text-accent">{l.num}</span>
-              <span className="display text-2xl">{l.label}</span>
-            </Link>
-          ))}
-        </nav>
-      ) : null}
     </header>
   );
 }

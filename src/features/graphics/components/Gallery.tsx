@@ -8,6 +8,7 @@ interface GalleryProps {
   columns: string;
   ratio: string;
   last?: boolean;
+  viewMore?: { url: string; label?: string };
 }
 
 export function Gallery({
@@ -18,6 +19,7 @@ export function Gallery({
   columns,
   ratio,
   last = false,
+  viewMore,
 }: GalleryProps) {
   return (
     <section className={last ? "" : "border-b border-hairline"}>
@@ -48,6 +50,19 @@ export function Gallery({
             </figure>
           ))}
         </div>
+
+        {viewMore && (
+          <div className="mt-12 flex justify-center">
+            <a
+              href={viewMore.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="label border border-hairline px-8 py-4 transition-colors hover:border-accent hover:text-accent"
+            >
+              {viewMore.label || "View More Work Like This →"}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Label, SectionHeader, DimensionRule } from "@/components/site/Technical";
 import { Discipline } from "@/features/home/components/Discipline";
-import { images, projects, detailSamples, NAME, thumbnailBackdoor, thumbnailBackend, thumbnailEcom } from "@/data/portfolio";
+import { projects, detailSamples, NAME, thumbnailBackdoor, thumbnailBackend, thumbnailEcom, centminusCC, blackroseCrew, ltkVlog } from "@/data/portfolio";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,11 +39,9 @@ function Home() {
             </div>
 
             <h1 className="display mt-10 text-[clamp(2.75rem,8vw,6.5rem)]">
-              Designing spaces,
+              Elevating Lifestyle through
               <br />
-              visuals, and
-              <br />
-              <span className="text-muted-foreground">stories.</span>
+              Strategic Design
             </h1>
 
             <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -122,9 +120,9 @@ function Home() {
         to="/graphics"
         reverse
         items={[
-          { image: images.graphicsCover, caption: "Portfolio Cover" },
-          { image: images.gfx01, caption: "Geometric Composition" },
-          { image: images.gfx02, caption: "Torn Paper Study" },
+          { image: centminusCC, caption: "Centminus - Creator Spotlight" },
+          { image: blackroseCrew, caption: "Black Rose Crew - Team Graphic" },
+          { image: ltkVlog, caption: "LTK VLOG 1 - Thumbnail" },
         ]}
       />
 

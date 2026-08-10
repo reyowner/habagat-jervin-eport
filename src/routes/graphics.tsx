@@ -1,9 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Label, SectionHeader } from "@/components/site/Technical";
 import { Gallery } from "@/features/graphics/components/Gallery";
-import { PDFViewer } from "@/features/graphics/components/PDFViewer";
-import { PDF_URL } from "@/features/graphics/constants/pdf-url";
-import { blackRose, gfxSamples, thumbnails, images, NAME } from "@/data/portfolio";
+import { blackRoseCreators, gfxSamplesImages, thumbnailDesignImages, NAME } from "@/data/portfolio";
 
 export const Route = createFileRoute("/graphics")({
   head: () => ({
@@ -48,19 +46,18 @@ function Graphics() {
           <SectionHeader
             index="GRAPHICS / 000"
             title="Graphics & Illustrations Portfolio"
-            meta="PDF Presentation"
+            meta="Interactive Flipbook"
           />
 
           <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-14">
             <div className="min-w-0">
               <p className="text-muted-foreground">
-                The complete graphics and illustrations portfolio, presented as a full
-                document. Browse it directly here, or open it in a new tab for the
-                full-resolution presentation.
+                The complete graphics and illustrations portfolio, presented as an interactive
+                flipbook. Browse through the pages directly here for the full experience.
               </p>
               <dl className="mt-8 grid grid-cols-2 gap-y-5 border-t border-hairline pt-6">
                 {[
-                  ["Document", "PDF"],
+                  ["Document", "Interactive Flipbook"],
                   ["Author", NAME],
                   ["Discipline", "Graphic Design"],
                   ["Edition", "2026"],
@@ -73,24 +70,26 @@ function Graphics() {
               </dl>
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
-                  href={PDF_URL}
+                  href="https://heyzine.com/flip-book/e77cacef1c.html"
                   target="_blank"
                   rel="noreferrer"
                   className="label border border-foreground bg-foreground px-8 py-4 text-primary-foreground transition-colors hover:border-accent hover:bg-accent"
                 >
-                  Open Portfolio
-                </a>
-                <a
-                  href={PDF_URL}
-                  download
-                  className="label border border-hairline px-8 py-4 transition-colors hover:border-accent hover:text-accent"
-                >
-                  Download PDF
+                  Open in New Tab
                 </a>
               </div>
             </div>
 
-            <PDFViewer images={images} name={NAME} />
+            <div>
+              <iframe
+                allowFullScreen
+                allow="autoplay; fullscreen; clipboard-write"
+                scrolling="no"
+                className="fp-iframe w-full"
+                style={{ border: "1px solid lightgray", height: "650px" }}
+                src="https://heyzine.com/flip-book/e77cacef1c.html"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -98,28 +97,31 @@ function Graphics() {
       <Gallery
         index="GRAPHICS / 001"
         title="Black Rose Content Creators"
-        meta="Content & Campaign Work"
-        works={blackRose}
+        meta="Creator Spotlight"
+        works={blackRoseCreators}
         columns="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4"
         ratio="aspect-[4/5]"
+        viewMore={{ url: "https://drive.google.com/drive/folders/12ioNzzPdYf99vjK8PuQXbFFxPgRfA8K_?usp=drive_link" }}
       />
 
       <Gallery
         index="GRAPHICS / 002"
         title="GFX Samples"
         meta="Selected Samples"
-        works={gfxSamples}
+        works={gfxSamplesImages}
         columns="grid-cols-1 sm:grid-cols-2 xl:grid-cols-3"
         ratio="aspect-[4/5]"
+        viewMore={{ url: "https://drive.google.com/drive/folders/1m9EDO-w0AjYkYw2OhTZCjMifNdmiF37D?usp=drive_link" }}
       />
 
       <Gallery
         index="GRAPHICS / 003"
         title="Thumbnail Design"
         meta="16:9 Thumbnails"
-        works={thumbnails}
+        works={thumbnailDesignImages}
         columns="grid-cols-1 lg:grid-cols-2"
         ratio="aspect-video"
+        viewMore={{ url: "https://drive.google.com/drive/folders/1RnwpHU0DFF_FTDgzVe5khL0VnLi4J__f?usp=drive_link" }}
         last
       />
     </>

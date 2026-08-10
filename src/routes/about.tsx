@@ -123,8 +123,8 @@ function About() {
                 className="grid gap-2 border-t border-hairline py-6 sm:grid-cols-[220px_1fr_auto] sm:items-baseline sm:gap-8"
               >
                 <span className="label text-muted-foreground">{e.year}</span>
-                <span className="display text-xl">{e.role}</span>
-                <span className="label text-muted-foreground">{e.place}</span>
+                <span className="display text-xl">{e.place}</span>
+                <span className="label text-muted-foreground">{e.role}</span>
               </li>
             ))}
           </ul>

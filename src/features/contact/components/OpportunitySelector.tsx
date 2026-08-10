@@ -1,12 +1,13 @@
 import { Label } from "@/components/site/Technical";
 import { OPPORTUNITIES, type OpportunityType } from "../constants/opportunities";
+import { memo } from "react";
 
 interface OpportunitySelectorProps {
   selected: OpportunityType;
   onSelect: (type: OpportunityType) => void;
 }
 
-export function OpportunitySelector({ selected, onSelect }: OpportunitySelectorProps) {
+export const OpportunitySelector = memo(function OpportunitySelector({ selected, onSelect }: OpportunitySelectorProps) {
   return (
     <div>
       <span className="label text-muted-foreground">Opportunity Type</span>
@@ -16,7 +17,7 @@ export function OpportunitySelector({ selected, onSelect }: OpportunitySelectorP
             key={o}
             type="button"
             onClick={() => onSelect(o)}
-            className={`label border px-5 py-3 transition-colors ${
+            className={`label border px-5 py-3 ${
               selected === o
                 ? "border-accent text-accent"
                 : "border-hairline text-muted-foreground hover:text-foreground"
@@ -28,4 +29,4 @@ export function OpportunitySelector({ selected, onSelect }: OpportunitySelectorP
       </div>
     </div>
   );
-}
+});
