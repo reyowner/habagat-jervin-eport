@@ -106,7 +106,8 @@ export const detailSamples: DetailSample[] = [
   {
     code: "DETAIL / ID-01",
     title: "Entertainment Unit — Residential Interior",
-    description: "Custom entertainment unit design developed through detailed elevations, plans, material specifications, and perspective studies. The project explores two design options incorporating wood slat panels, integrated LED lighting, laminated plywood cabinetry, overhead shelving, and custom storage.",
+    description:
+      "Custom entertainment unit design developed through detailed elevations, plans, material specifications, and perspective studies. The project explores two design options incorporating wood slat panels, integrated LED lighting, laminated plywood cabinetry, overhead shelving, and custom storage.",
     category: "Residential Interior Design",
     year: "2023",
     tools: "AutoCAD · Adobe Illustrator",
@@ -116,7 +117,8 @@ export const detailSamples: DetailSample[] = [
   {
     code: "DETAIL / A-02",
     title: "Tropique Cafe & Bar — Architectural Interior Design Development",
-    description: "Design development for a tropical/boho-inspired cafe and bar interior in Lapu-Lapu City, Cebu. The project includes floor planning, reflected ceiling design, interior elevations, sections, kitchen planning, staff/service areas, and vanity/toilet design.",
+    description:
+      "Design development for a tropical/boho-inspired cafe and bar interior in Lapu-Lapu City, Cebu. The project includes floor planning, reflected ceiling design, interior elevations, sections, kitchen planning, staff/service areas, and vanity/toilet design.",
     category: "Hospitality Interior Design",
     year: "2023",
     tools: "AutoCAD · Adobe Illustrator",
@@ -126,7 +128,8 @@ export const detailSamples: DetailSample[] = [
   {
     code: "DETAIL / A-03",
     title: "City Osteopathy Ltd. Renovation — Healthcare Interior",
-    description: "Architectural interior renovation documentation for a healthcare/osteopathy clinic in Central, Hong Kong. The project includes general arrangement planning, reflected ceiling design, floor finishes, interior elevations, reception detailing, treatment rooms, office and staff areas, lighting, cabinetry, and acoustic treatments.",
+    description:
+      "Architectural interior renovation documentation for a healthcare/osteopathy clinic in Central, Hong Kong. The project includes general arrangement planning, reflected ceiling design, floor finishes, interior elevations, reception detailing, treatment rooms, office and staff areas, lighting, cabinetry, and acoustic treatments.",
     category: "Healthcare Interior Design",
     year: "2025",
     tools: "AutoCAD · Adobe Illustrator",
@@ -263,7 +266,10 @@ export const projects: Project[] = [
       { label: "Status", value: "Proposed Design" },
       { label: "Type", value: "Sensory-Friendly Interior" },
       { label: "Role", value: "Architectural Interior and 3D Visualization" },
-      { label: "Tools", value: "AutoCAD · SketchUp Pro · 3Ds MAX · Corona Render · Adobe Photoshop 2022" },
+      {
+        label: "Tools",
+        value: "AutoCAD · SketchUp Pro · 3Ds MAX · Corona Render · Adobe Photoshop 2022",
+      },
     ],
   },
 ];
@@ -392,7 +398,8 @@ export const longForm: VideoWork[] = [
   {
     code: "VIDEO / 002",
     title: "BACKEND — Black Rose Event Vlog",
-    description: "Vlog about the event we had as part of the Black Rose Community in VALORANT Creator Brawl + Black Rose Grand Finals official event.",
+    description:
+      "Vlog about the event we had as part of the Black Rose Community in VALORANT Creator Brawl + Black Rose Grand Finals official event.",
     duration: "Event Vlog",
     category: "Vlog",
     video: backendBlackRose,

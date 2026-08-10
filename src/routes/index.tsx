@@ -1,7 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Label, SectionHeader, DimensionRule } from "@/components/site/Technical";
 import { Discipline } from "@/features/home/components/Discipline";
-import { projects, detailSamples, NAME, thumbnailBackdoor, thumbnailBackend, thumbnailEcom, centminusCC, blackroseCrew, ltkVlog } from "@/data/portfolio";
+import {
+  projects,
+  detailSamples,
+  NAME,
+  thumbnailBackdoor,
+  thumbnailBackend,
+  thumbnailEcom,
+  centminusCC,
+  blackroseCrew,
+  ltkVlog,
+} from "@/data/portfolio";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -45,11 +55,11 @@ function Home() {
             </h1>
 
             <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              I&apos;m {NAME} — a Filipino architect, 3D visualizer, creative designer,
-              illustrator, and multimedia designer based in Bataan, Philippines. I&apos;m a
-              passionate freelance architect and co-founder of HACARA+ Architects, dedicated
-              to creating transformative designs that enhance people&apos;s lives and
-              contribute to the productivity and efficiency of businesses.
+              I&apos;m {NAME} — a Filipino architect, 3D visualizer, creative designer, illustrator,
+              and multimedia designer based in Bataan, Philippines. I&apos;m a passionate freelance
+              architect and co-founder of HACARA+ Architects, dedicated to creating transformative
+              designs that enhance people&apos;s lives and contribute to the productivity and
+              efficiency of businesses.
             </p>
 
             <div className="mt-12 flex flex-wrap gap-4">

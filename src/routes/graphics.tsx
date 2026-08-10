@@ -15,8 +15,7 @@ export const Route = createFileRoute("/graphics")({
       { property: "og:title", content: `Graphics & Illustrations — ${NAME}` },
       {
         property: "og:description",
-        content:
-          "Portfolio PDF, content graphics, GFX samples and YouTube thumbnail design.",
+        content: "Portfolio PDF, content graphics, GFX samples and YouTube thumbnail design.",
       },
     ],
   }),
@@ -34,8 +33,8 @@ function Graphics() {
             Graphics &amp; illustrations.
           </h1>
           <p className="mt-8 max-w-xl text-muted-foreground">
-            Editorial layouts, content graphics, brand assets and thumbnail design —
-            built on the same structural thinking as the architectural work.
+            Editorial layouts, content graphics, brand assets and thumbnail design — built on the
+            same structural thinking as the architectural work.
           </p>
         </div>
       </section>
@@ -82,6 +81,7 @@ function Graphics() {
 
             <div>
               <iframe
+                title="Graphics and illustrations portfolio flipbook"
                 allowFullScreen
                 allow="autoplay; fullscreen; clipboard-write"
                 scrolling="no"
@@ -101,7 +101,9 @@ function Graphics() {
         works={blackRoseCreators}
         columns="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4"
         ratio="aspect-[4/5]"
-        viewMore={{ url: "https://drive.google.com/drive/folders/12ioNzzPdYf99vjK8PuQXbFFxPgRfA8K_?usp=drive_link" }}
+        viewMore={{
+          url: "https://drive.google.com/drive/folders/12ioNzzPdYf99vjK8PuQXbFFxPgRfA8K_?usp=drive_link",
+        }}
       />
 
       <Gallery
@@ -111,7 +113,9 @@ function Graphics() {
         works={gfxSamplesImages}
         columns="grid-cols-1 sm:grid-cols-2 xl:grid-cols-3"
         ratio="aspect-[4/5]"
-        viewMore={{ url: "https://drive.google.com/drive/folders/1m9EDO-w0AjYkYw2OhTZCjMifNdmiF37D?usp=drive_link" }}
+        viewMore={{
+          url: "https://drive.google.com/drive/folders/1m9EDO-w0AjYkYw2OhTZCjMifNdmiF37D?usp=drive_link",
+        }}
       />
 
       <Gallery
@@ -121,7 +125,9 @@ function Graphics() {
         works={thumbnailDesignImages}
         columns="grid-cols-1 lg:grid-cols-2"
         ratio="aspect-video"
-        viewMore={{ url: "https://drive.google.com/drive/folders/1RnwpHU0DFF_FTDgzVe5khL0VnLi4J__f?usp=drive_link" }}
+        viewMore={{
+          url: "https://drive.google.com/drive/folders/1RnwpHU0DFF_FTDgzVe5khL0VnLi4J__f?usp=drive_link",
+        }}
         last
       />
     </>

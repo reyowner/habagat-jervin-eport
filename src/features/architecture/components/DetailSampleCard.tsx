@@ -16,9 +16,7 @@ export function DetailSampleCard({ detailSample }: DetailSampleCardProps) {
           className="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
         />
         {detailSample.link && (
-          <span className="label absolute bottom-3 right-3 bg-background/80 px-2 py-1">
-            View →
-          </span>
+          <span className="label absolute bottom-3 right-3 bg-background/80 px-2 py-1">View →</span>
         )}
       </div>
       <div className="mt-5 flex items-center justify-between gap-4">

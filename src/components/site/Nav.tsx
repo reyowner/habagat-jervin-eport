@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { useState } from "react";
 import { NAME } from "@/data/portfolio";
 
 const links = [
@@ -11,6 +12,8 @@ const links = [
 ] as const;
 
 export function Nav() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-hairline bg-background">
       <div className="mx-auto grid max-w-[1600px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:px-8 lg:px-12">
@@ -36,10 +39,36 @@ export function Nav() {
           ))}
         </nav>
 
-        <div className="lg:hidden">
-          <span className="label">Menu</span>
-        </div>
+        <button
+          type="button"
+          className="lg:hidden"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span className="label">{mobileMenuOpen ? "Close" : "Menu"}</span>
+        </button>
       </div>
+
+      {mobileMenuOpen && (
+        <nav id="mobile-menu" className="lg:hidden border-t border-hairline bg-background">
+          <ul className="space-y-1 px-5 py-4 sm:px-8 lg:px-12">
+            {links.map((l) => (
+              <li key={l.to}>
+                <Link
+                  to={l.to}
+                  className="label link-underline block py-2 text-muted-foreground hover:text-foreground"
+                  activeProps={{ className: "label link-underline text-foreground active-nav" }}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span className="text-accent">{l.num}</span> / {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 }

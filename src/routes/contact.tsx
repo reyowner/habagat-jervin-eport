@@ -43,8 +43,7 @@ function Contact() {
             Let&apos;s work together.
           </h1>
           <p className="mt-8 max-w-xl text-muted-foreground">
-            Currently available for both freelance projects and full-time creative
-            roles.
+            Currently available for both freelance projects and full-time creative roles.
           </p>
         </div>
       </section>
@@ -92,11 +91,12 @@ function Contact() {
                 e.preventDefault();
                 setLoading(true);
                 setError(null);
+                setSent(false);
 
                 // Dynamically import EmailJS only on submit
                 try {
                   const emailjs = await import("@emailjs/browser");
-                  
+
                   // Lazy initialize EmailJS only on first submit
                   if (!emailjsInitialized.current) {
                     emailjs.default.init("o2UFB-h1s6jjuGObJ");
@@ -112,11 +112,7 @@ function Contact() {
                     message: formData.get("message"),
                   };
 
-                  await emailjs.default.send(
-                    "service_dforpz6",
-                    "template_qmunvqj",
-                    templateParams
-                  );
+                  await emailjs.default.send("service_dforpz6", "template_qmunvqj", templateParams);
                   setSent(true);
                   formElement.reset();
                 } catch (err) {
@@ -158,13 +154,9 @@ function Contact() {
                     {loading ? "Sending..." : "Submit"}
                   </button>
                   {sent ? (
-                    <span className="label text-accent">
-                      Thank you — message sent successfully
-                    </span>
+                    <span className="label text-accent">Thank you — message sent successfully</span>
                   ) : null}
-                  {error ? (
-                    <span className="label text-destructive">{error}</span>
-                  ) : null}
+                  {error ? <span className="label text-destructive">{error}</span> : null}
                 </div>
               </div>
             </form>
@@ -174,12 +166,37 @@ function Contact() {
             <Label accent>Direct</Label>
             <ul className="mt-8 space-y-5">
               {[
-                ["Email", "ar.jervinhabagat@gmail.com", "mailto:ar.jervinhabagat@gmail.com", "/icons8-email-48.png"],
+                [
+                  "Email",
+                  "ar.jervinhabagat@gmail.com",
+                  "mailto:ar.jervinhabagat@gmail.com",
+                  "/icons8-email-48.png",
+                ],
                 ["Phone", "+63 926 116 1347", "tel:+639261161347", "/icons8-call-30.png"],
-                ["Location", "Mariveles, Bataan, Philippines", undefined, "/icons8-location-48.png"],
-                ["Behance", "ar_jervinhabagat", "https://www.behance.net/ar_jervinhabagat", "/icons8-behance-48.png"],
-                ["LinkedIn", "arjervinhabagat", "https://www.linkedin.com/in/arjervinhabagat/", "/icons8-linkedin-48.png"],
-                ["Facebook", "ar.jervinhabagat", "https://www.facebook.com/ar.jervinhabagat", "/icons8-facebook-48.png"],
+                [
+                  "Location",
+                  "Mariveles, Bataan, Philippines",
+                  undefined,
+                  "/icons8-location-48.png",
+                ],
+                [
+                  "Behance",
+                  "ar_jervinhabagat",
+                  "https://www.behance.net/ar_jervinhabagat",
+                  "/icons8-behance-48.png",
+                ],
+                [
+                  "LinkedIn",
+                  "arjervinhabagat",
+                  "https://www.linkedin.com/in/arjervinhabagat/",
+                  "/icons8-linkedin-48.png",
+                ],
+                [
+                  "Facebook",
+                  "ar.jervinhabagat",
+                  "https://www.facebook.com/ar.jervinhabagat",
+                  "/icons8-facebook-48.png",
+                ],
               ].map(([k, v, href, icon]) => (
                 <li key={k} className="border-b border-hairline pb-5">
                   <span className="label block text-muted-foreground">{k}</span>

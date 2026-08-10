@@ -14,7 +14,6 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as GraphicsRouteImport } from './routes/graphics'
-import { Route as TestFormRouteImport } from './routes/test-form'
 import { Route as VideoRouteImport } from './routes/video'
 import { Route as ArchitectureIndexRouteImport } from './routes/architecture.index'
 import { Route as ArchitectureSlugRouteImport } from './routes/architecture.$slug'
@@ -44,11 +43,6 @@ const GraphicsRoute = GraphicsRouteImport.update({
   path: '/graphics',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TestFormRoute = TestFormRouteImport.update({
-  id: '/test-form',
-  path: '/test-form',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const VideoRoute = VideoRouteImport.update({
   id: '/video',
   path: '/video',
@@ -71,7 +65,6 @@ export interface FileRoutesByFullPath {
   '/architecture': typeof ArchitectureRouteWithChildren
   '/contact': typeof ContactRoute
   '/graphics': typeof GraphicsRoute
-  '/test-form': typeof TestFormRoute
   '/video': typeof VideoRoute
   '/architecture/$slug': typeof ArchitectureSlugRoute
   '/architecture/': typeof ArchitectureIndexRoute
@@ -81,7 +74,6 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/graphics': typeof GraphicsRoute
-  '/test-form': typeof TestFormRoute
   '/video': typeof VideoRoute
   '/architecture/$slug': typeof ArchitectureSlugRoute
   '/architecture': typeof ArchitectureIndexRoute
@@ -93,7 +85,6 @@ export interface FileRoutesById {
   '/architecture': typeof ArchitectureRouteWithChildren
   '/contact': typeof ContactRoute
   '/graphics': typeof GraphicsRoute
-  '/test-form': typeof TestFormRoute
   '/video': typeof VideoRoute
   '/architecture/$slug': typeof ArchitectureSlugRoute
   '/architecture/': typeof ArchitectureIndexRoute
@@ -106,7 +97,6 @@ export interface FileRouteTypes {
     | '/architecture'
     | '/contact'
     | '/graphics'
-    | '/test-form'
     | '/video'
     | '/architecture/$slug'
     | '/architecture/'
@@ -116,7 +106,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/graphics'
-    | '/test-form'
     | '/video'
     | '/architecture/$slug'
     | '/architecture'
@@ -127,7 +116,6 @@ export interface FileRouteTypes {
     | '/architecture'
     | '/contact'
     | '/graphics'
-    | '/test-form'
     | '/video'
     | '/architecture/$slug'
     | '/architecture/'
@@ -139,7 +127,6 @@ export interface RootRouteChildren {
   ArchitectureRoute: typeof ArchitectureRouteWithChildren
   ContactRoute: typeof ContactRoute
   GraphicsRoute: typeof GraphicsRoute
-  TestFormRoute: typeof TestFormRoute
   VideoRoute: typeof VideoRoute
 }
 
@@ -178,13 +165,6 @@ declare module '@tanstack/react-router' {
       path: '/graphics'
       fullPath: '/graphics'
       preLoaderRoute: typeof GraphicsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/test-form': {
-      id: '/test-form'
-      path: '/test-form'
-      fullPath: '/test-form'
-      preLoaderRoute: typeof TestFormRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/video': {
@@ -231,7 +211,6 @@ const rootRouteChildren: RootRouteChildren = {
   ArchitectureRoute: ArchitectureRouteWithChildren,
   ContactRoute: ContactRoute,
   GraphicsRoute: GraphicsRoute,
-  TestFormRoute: TestFormRoute,
   VideoRoute: VideoRoute,
 }
 export const routeTree = rootRouteImport

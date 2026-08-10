@@ -36,12 +36,11 @@ function Architecture() {
             Drawings, details and built ideas.
           </h1>
           <p className="mt-8 max-w-xl text-muted-foreground">
-            A working archive of architectural documentation and design projects — from
-            construction details and section studies to complete presentation sets.
+            A working archive of architectural documentation and design projects — from construction
+            details and section studies to complete presentation sets.
           </p>
         </div>
       </section>
-
 
       {/* Featured PDF portfolio */}
       <section className="border-b border-hairline">
@@ -55,9 +54,8 @@ function Architecture() {
           <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-14">
             <div className="min-w-0">
               <p className="text-muted-foreground">
-                The complete architecture portfolio, presented as an interactive
-                flipbook. Browse through construction details, plans, sections, and
-                complete project case studies.
+                The complete architecture portfolio, presented as an interactive flipbook. Browse
+                through construction details, plans, sections, and complete project case studies.
               </p>
               <dl className="mt-8 grid grid-cols-2 gap-y-5 border-t border-hairline pt-6">
                 {[
@@ -93,6 +91,7 @@ function Architecture() {
 
             <div>
               <iframe
+                title="Architecture portfolio flipbook"
                 allowFullScreen
                 allow="autoplay; fullscreen; clipboard-write"
                 scrolling="no"
@@ -107,11 +106,7 @@ function Architecture() {
 
       <section className="border-b border-hairline">
         <div className="mx-auto max-w-[1600px] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
-          <SectionHeader
-            index="ARCH / 001"
-            title="Architectural Projects"
-            meta="Selected Works"
-          />
+          <SectionHeader index="ARCH / 001" title="Architectural Projects" meta="Selected Works" />
 
           <div className="mt-14 space-y-20">
             {projects.map((p, i) => (
@@ -158,8 +153,6 @@ function Architecture() {
           </div>
         </div>
       </section>
-
-      
     </>
   );
 }
