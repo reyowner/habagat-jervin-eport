@@ -51,7 +51,7 @@ function Home() {
             <h1 className="display mt-10 text-[clamp(2.75rem,8vw,6.5rem)]">
               Elevating Lifestyle through
               <br />
-              Strategic Design
+              <span className="text-muted-foreground">Strategic Design</span>
             </h1>
 
             <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
