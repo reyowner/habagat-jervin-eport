@@ -155,13 +155,13 @@ export const projects: Project[] = [
     code: "PROJECT / 001",
     name: "ZO City | Smart Industrial City",
     type: "Smart Industrial City",
-    location: "Pampanga, Philippines",
+    location: "Cavite, Philippines",
     year: "2026",
     summary:
       "Envisioned as a next-generation mixed-use development, ZO City integrates industrial, commercial, and civic functions within a master-planned smart city environment.",
     description: [
       "ZO City is envisioned as a next-generation mixed-use development that integrates industrial, commercial, and civic functions within a master-planned smart city environment. The concept emphasizes connectivity, economic growth, and sustainable urban development through strategically organized industrial zones, commercial centers, public spaces, and supporting infrastructure.",
-      "Designed to accommodate future expansion and technological innovation, the development promotes efficient mobility, business opportunities, and a balanced live-work ecosystem. Through advanced planning and visualization, ZO City presents a forward-looking vision for a modern industrial and commercial hub in Pampanga, Philippines.",
+      "Designed to accommodate future expansion and technological innovation, the development promotes efficient mobility, business opportunities, and a balanced live-work ecosystem. Through advanced planning and visualization, ZO City presents a forward-looking vision for a modern industrial and commercial hub in Cavite, Philippines.",
     ],
     cover: aerialPerspective,
     gallery: [
@@ -232,9 +232,9 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "alice-wonder-bedroom",
+    slug: "calix-wonder-bedroom",
     code: "PROJECT / 003",
-    name: "Alice Wonder Bedroom",
+    name: "Calix Wonder Bedroom",
     type: "Sensory-Friendly Bedroom",
     location: "Pampanga, Philippines",
     year: "2023",
