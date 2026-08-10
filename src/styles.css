@@ -194,9 +194,14 @@
     background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
   &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+@utility active-nav {
+  &::after {
     transform: scaleX(1);
   }
 }

@@ -10,7 +10,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <article
-      className={`grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:gap-14 ${
+      className={`grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-14 ${
         index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >

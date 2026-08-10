@@ -28,7 +28,7 @@ export function Footer() {
                 <li key={l.to}>
                   <Link
                     to={l.to}
-                    className="label link-underline text-muted-foreground transition-colors hover:text-foreground"
+                    className="label link-underline text-muted-foreground hover:text-foreground"
                   >
                     {l.label}
                   </Link>
@@ -42,34 +42,40 @@ export function Footer() {
             <ul className="mt-5 space-y-3">
               <li>
                 <a
-                  href="mailto:hello@jervinhabagat.com"
-                  className="label link-underline text-muted-foreground transition-colors hover:text-foreground"
+                  href="mailto:ar.jervinhabagat@gmail.com"
+                  className="label link-underline text-muted-foreground hover:text-foreground"
                 >
-                  hello@jervinhabagat.com
+                  ar.jervinhabagat@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="https://instagram.com"
-                  className="label link-underline text-muted-foreground transition-colors hover:text-foreground"
+                  href="https://www.behance.net/ar_jervinhabagat"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="label link-underline inline-flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 >
-                  Instagram
+                  Behance
                 </a>
               </li>
               <li>
                 <a
-                  href="https://linkedin.com"
-                  className="label link-underline text-muted-foreground transition-colors hover:text-foreground"
+                  href="https://www.linkedin.com/in/arjervinhabagat/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="label link-underline inline-flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 >
                   LinkedIn
                 </a>
               </li>
               <li>
                 <a
-                  href="https://youtube.com"
-                  className="label link-underline text-muted-foreground transition-colors hover:text-foreground"
+                  href="https://www.facebook.com/ar.jervinhabagat"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="label link-underline inline-flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 >
-                  YouTube
+                  Facebook
                 </a>
               </li>
             </ul>

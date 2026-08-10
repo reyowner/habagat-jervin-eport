@@ -12,12 +12,12 @@ const links = [
 ] as const;
 
 export function Nav() {
-  const [open, setOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-hairline bg-background/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-hairline bg-background">
       <div className="mx-auto grid max-w-[1600px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:px-8 lg:px-12">
-        <Link to="/" className="min-w-0" onClick={() => setOpen(false)}>
+        <Link to="/" className="min-w-0">
           <span className="display block truncate text-sm uppercase tracking-[0.2em]">
             {NAME}
           </span>
@@ -31,8 +31,8 @@ export function Nav() {
             <Link
               key={l.to}
               to={l.to}
-              className="label link-underline text-muted-foreground transition-colors hover:text-foreground"
-              activeProps={{ className: "label link-underline text-foreground" }}
+              className="label link-underline text-muted-foreground hover:text-foreground"
+              activeProps={{ className: "label link-underline text-foreground active-nav" }}
             >
               <span className="text-accent">{l.num}</span> / {l.label}
             </Link>
@@ -41,31 +41,34 @@ export function Nav() {
 
         <button
           type="button"
-          aria-label="Toggle menu"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="label shrink-0 border border-hairline px-4 py-3 text-foreground transition-colors hover:border-accent hover:text-accent lg:hidden"
+          className="lg:hidden"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-menu"
+          aria-label="Toggle navigation menu"
         >
-          {open ? "Close" : "Menu"}
+          <span className="label">{mobileMenuOpen ? "Close" : "Menu"}</span>
         </button>
       </div>
 
-      {open ? (
-        <nav className="border-t border-hairline lg:hidden">
-          {links.map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
-              onClick={() => setOpen(false)}
-              className="flex items-baseline gap-4 border-b border-hairline px-5 py-5 sm:px-8"
-              activeProps={{ className: "text-accent" }}
-            >
-              <span className="label text-accent">{l.num}</span>
-              <span className="display text-2xl">{l.label}</span>
-            </Link>
-          ))}
+      {mobileMenuOpen && (
+        <nav id="mobile-menu" className="lg:hidden border-t border-hairline bg-background">
+          <ul className="space-y-1 px-5 py-4 sm:px-8 lg:px-12">
+            {links.map((l) => (
+              <li key={l.to}>
+                <Link
+                  to={l.to}
+                  className="label link-underline block py-2 text-muted-foreground hover:text-foreground"
+                  activeProps={{ className: "label link-underline text-foreground active-nav" }}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span className="text-accent">{l.num}</span> / {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </nav>
-      ) : null}
+      )}
     </header>
   );
 }

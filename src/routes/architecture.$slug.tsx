@@ -70,7 +70,7 @@ function ProjectPage() {
         <img
           src={project.cover}
           alt={project.name}
-          className="aspect-[16/9] w-full object-cover grayscale"
+          className="aspect-[16/9] w-full object-cover"
         />
       </section>
 

@@ -1,16 +1,57 @@
-import heroArchitecture from "@/assets/hero-architecture.jpg";
-import detail01 from "@/assets/detail-01.jpg";
-import detail02 from "@/assets/detail-02.jpg";
-import detail03 from "@/assets/detail-03.jpg";
-import project01 from "@/assets/project-01.jpg";
-import project02 from "@/assets/project-02.jpg";
-import graphicsCover from "@/assets/graphics-cover.jpg";
-import gfx01 from "@/assets/gfx-01.jpg";
-import gfx02 from "@/assets/gfx-02.jpg";
-import thumb01 from "@/assets/thumb-01.jpg";
-import video01 from "@/assets/video-01.jpg";
-import short01 from "@/assets/short-01.jpg";
 import portrait from "@/assets/profile-jervin-portrait.png";
+import aerialPerspective from "@/assets/Architectural/Projects/1st/20230302 AERIAL PERSPECTIVE 1 POSPRO 1080P.png";
+import c1Pospro from "@/assets/Architectural/Projects/1st/20230303 C1 POSPRO.png";
+import c2PosproBright from "@/assets/Architectural/Projects/1st/20230303 C2 POSPRO - BRIGHT.jpg";
+import c2Pospro from "@/assets/Architectural/Projects/1st/20230303 C2 POSPRO.jpg";
+import highRiseVisualization from "@/assets/Architectural/Projects/1st/RECENT HIGH RISE VISUALIZATION 1080P.jpg";
+import projectNoirP1 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P1.jpg";
+import projectNoirP2 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P2.jpg";
+import projectNoirP3 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P3.jpg";
+import projectNoirP4 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P4.jpg";
+import projectNoirP5 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P5.jpg";
+import projectNoirP6 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P6.jpg";
+import projectNoirP7 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P7.jpg";
+import projectNoirP8 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P8.jpg";
+import projectNoirP9 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P9.jpg";
+import projectNoirP10 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P10.jpg";
+import projectNoirP11 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P11.jpg";
+import projectNoirP115 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P11.5.jpg";
+import projectNoirP12 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P12.jpg";
+import projectNoirP13 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P13.jpg";
+import projectNoirP14 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P14.jpg";
+import projectNoirP15 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P15.jpg";
+import projectNoirP16 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P16.jpg";
+import projectNoirP17 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P17.jpg";
+import projectNoirP18 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P18.jpg";
+import projectNoirP19 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P19.jpg";
+import projectNoirP20 from "@/assets/Architectural/Projects/2nd/ProjectNOIR__P20.jpg";
+import projectNoirInteriorP1 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P1.jpg";
+import projectNoirInteriorP2 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P2.jpg";
+import projectNoirInteriorP3 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P3.jpg";
+import projectNoirInteriorP4 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P4.jpg";
+import projectNoirInteriorP5 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P5.jpg";
+import projectNoirInteriorP6 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P6.jpg";
+import projectNoirInteriorP7 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P7.jpg";
+import projectNoirInteriorP8 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P8.jpg";
+import projectNoirInteriorP9 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P9.jpg";
+import projectNoirInteriorP10 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P10.jpg";
+import projectNoirInteriorP11 from "@/assets/Architectural/Projects/2nd/ProjectNoir Interior__P11.jpg";
+import wmp10 from "@/assets/Architectural/Projects/3rd/WMP.1.0 copy.png";
+import wmp11 from "@/assets/Architectural/Projects/3rd/WMP.1.1.png";
+import wmp12 from "@/assets/Architectural/Projects/3rd/WMP.1.2 copy.png";
+import wmp21 from "@/assets/Architectural/Projects/3rd/WMP.2.1.png";
+import wmp22 from "@/assets/Architectural/Projects/3rd/WMP.2.2 copy.png";
+import wmp31 from "@/assets/Architectural/Projects/3rd/WMP.3.1 copy.png";
+import wmp32 from "@/assets/Architectural/Projects/3rd/WMP.3.2 copy.png";
+import wmp41 from "@/assets/Architectural/Projects/3rd/WMP.4.1 copy.png";
+import wmp42 from "@/assets/Architectural/Projects/3rd/WMP.4.2 copy.png";
+import wmp51 from "@/assets/Architectural/Projects/3rd/WMP.5.1 copy.png";
+import wmp52 from "@/assets/Architectural/Projects/3rd/WMP.5.2 copy.png";
+import wmp61 from "@/assets/Architectural/Projects/3rd/WMP.6.1 copy.png";
+import wmp62 from "@/assets/Architectural/Projects/3rd/WMP.6.2 copy.png";
+import detailSample1 from "@/assets/Architectural/Detail/1st/Thumbnail for Razan Salhi ID Sheets.png";
+import detailSample2 from "@/assets/Architectural/Detail/2nd/Thumbnail for TROPIQUE CAFE AND BAR - DESIGN DEVELOPMENT SHEET.png";
+import detailSample3 from "@/assets/Architectural/Detail/3rd/Thumbnail for Complete Sheet for Ar.B.B.png";
 import backdoorGastropub from "@/assets/Long-Form_Vids/Backdoor Gastropub - Architectural Animation.mp4";
 import backendBlackRose from "@/assets/Long-Form_Vids/BACKEND _  Black Rose.mp4";
 import ecomCity from "@/assets/Long-Form_Vids/ECOM City Conceptualization - Video Presentation Walkthrough.mp4";
@@ -21,20 +62,21 @@ import walangMaiiwan from "@/assets/Short-Form_Vids/Walang maiiwan sa pamilya [P
 import thumbnailBackdoor from "@/assets/Thumbnail for Backdoor Gastropub.png";
 import thumbnailEcom from "@/assets/Thumbnail for ECOM City Conceptualization.png";
 import thumbnailBackend from "@/assets/Thumbnail for BACKEND — Black Rose Event Vlog.png";
+import centminusCC from "@/assets/GFX/Black Rose Content Creators/Centminus_CC_Full_01.5.png";
+import chewieCC from "@/assets/GFX/Black Rose Content Creators/Chewie_CC_Full_01.png";
+import tadabadumCC from "@/assets/GFX/Black Rose Content Creators/Tadabadum_CC_Full_01.png";
+import tortalongCC from "@/assets/GFX/Black Rose Content Creators/Tortalong_CC_Full_01.png";
+import akgAnnouncement from "@/assets/GFX/GFX Sample/AKG_Announcement1x1.png";
+import akgMainCover from "@/assets/GFX/GFX Sample/AKG_MainCoverAnnouncement.png";
+import roadToTier10 from "@/assets/GFX/GFX Sample/ROADTOTIER10-FB POSTER.jpg";
+import alagadNiBoss from "@/assets/GFX/GFX Sample/ALAGAD NI BOSS A.png";
+import blackroseCrew from "@/assets/GFX/GFX Sample/BLACKROSE CREW.png";
+import isThisJoel from "@/assets/GFX/GFX Sample/IsThisJoel.jpg";
+import titasOfWheninManila from "@/assets/GFX/GFX Sample/TitasOfWheninManila-Facebook.jpg";
+import ltkVlog from "@/assets/GFX/Thumbnail Design/LTK-VLOG1.png";
+import wwmNovellino from "@/assets/GFX/Thumbnail Design/WWM-THE NOVELLINO DEAL.png";
 
 export const images = {
-  heroArchitecture,
-  detail01,
-  detail02,
-  detail03,
-  project01,
-  project02,
-  graphicsCover,
-  gfx01,
-  gfx02,
-  thumb01,
-  video01,
-  short01,
   portrait,
 };
 
@@ -45,6 +87,7 @@ export const videoThumbnails = {
 };
 
 export { thumbnailBackdoor, thumbnailBackend, thumbnailEcom };
+export { centminusCC, blackroseCrew, ltkVlog };
 
 export const NAME = "Jervin Habagat";
 
@@ -56,62 +99,42 @@ export type DetailSample = {
   year: string;
   tools: string;
   image: string;
+  link?: string;
 };
 
 export const detailSamples: DetailSample[] = [
   {
-    code: "DETAIL / A-01",
-    title: "Wall Section — Exposed Concrete",
-    description: "Construction detail study of a cast-in-place envelope with concealed drainage.",
-    category: "Construction Detail",
-    year: "2025",
-    tools: "AutoCAD · Illustrator",
-    image: detail01,
+    code: "DETAIL / ID-01",
+    title: "Entertainment Unit — Residential Interior",
+    description:
+      "Custom entertainment unit design developed through detailed elevations, plans, material specifications, and perspective studies. The project explores two design options incorporating wood slat panels, integrated LED lighting, laminated plywood cabinetry, overhead shelving, and custom storage.",
+    category: "Residential Interior Design",
+    year: "2023",
+    tools: "AutoCAD · Adobe Illustrator",
+    image: detailSample1,
+    link: "https://drive.google.com/file/d/1VSIK1az7RoYQh8xmN6_n_IYMe_XYZpOF/view?usp=sharing",
   },
   {
     code: "DETAIL / A-02",
-    title: "Site Plan & Elevation Study",
-    description: "Terrain-following elevation set with contour datum lines and sight studies.",
-    category: "Plan / Elevation",
-    year: "2025",
-    tools: "AutoCAD · Revit",
-    image: detail02,
+    title: "Tropique Cafe & Bar — Architectural Interior Design Development",
+    description:
+      "Design development for a tropical/boho-inspired cafe and bar interior in Lapu-Lapu City, Cebu. The project includes floor planning, reflected ceiling design, interior elevations, sections, kitchen planning, staff/service areas, and vanity/toilet design.",
+    category: "Hospitality Interior Design",
+    year: "2023",
+    tools: "AutoCAD · Adobe Illustrator",
+    image: detailSample2,
+    link: "https://drive.google.com/file/d/1PQyzrX9wpkBgnnRW7Soy2M_wLcjzw1Dv/view?usp=sharing",
   },
   {
     code: "DETAIL / A-03",
-    title: "Longitudinal Section",
-    description: "Section cut through the double-height volume documenting slab and roof assembly.",
-    category: "Section",
-    year: "2024",
-    tools: "Revit · Illustrator",
-    image: detail03,
-  },
-  {
-    code: "DETAIL / A-04",
-    title: "Residential Floor Plan",
-    description: "Single-family plan with structural grid, circulation core and furniture layout.",
-    category: "Plan",
-    year: "2024",
-    tools: "AutoCAD",
-    image: detail02,
-  },
-  {
-    code: "DETAIL / A-05",
-    title: "Facade Articulation",
-    description: "Rhythm study of vertical fins and shading depth across the south elevation.",
-    category: "Facade Study",
-    year: "2024",
-    tools: "SketchUp · Lumion",
-    image: detail01,
-  },
-  {
-    code: "DETAIL / A-06",
-    title: "Roof & Parapet Assembly",
-    description: "Waterproofing, insulation and parapet capping detail with dimension callouts.",
-    category: "Construction Detail",
-    year: "2023",
-    tools: "AutoCAD",
-    image: detail03,
+    title: "City Osteopathy Ltd. Renovation — Healthcare Interior",
+    description:
+      "Architectural interior renovation documentation for a healthcare/osteopathy clinic in Central, Hong Kong. The project includes general arrangement planning, reflected ceiling design, floor finishes, interior elevations, reception detailing, treatment rooms, office and staff areas, lighting, cabinetry, and acoustic treatments.",
+    category: "Healthcare Interior Design",
+    year: "2025",
+    tools: "AutoCAD · Adobe Illustrator",
+    image: detailSample3,
+    link: "https://drive.google.com/file/d/1BJRzYmHlfAjvjN58I6b8RV6n324IoWvm/view?usp=sharing",
   },
 ];
 
@@ -131,82 +154,122 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "casa-lumen",
+    slug: "zo-city",
     code: "PROJECT / 001",
-    name: "Casa Lumen",
-    type: "Private Residence",
-    location: "Cebu, Philippines",
-    year: "2025",
+    name: "ZO City | Smart Industrial City",
+    type: "Smart Industrial City",
+    location: "Cavite, Philippines",
+    year: "2026",
     summary:
-      "A two-storey concrete residence organised around a shaded courtyard and a continuous horizontal opening.",
+      "Envisioned as a next-generation mixed-use development, ZO City integrates industrial, commercial, and civic functions within a master-planned smart city environment.",
     description: [
-      "Casa Lumen is arranged as two offset concrete volumes bridged by a shaded terrace. The upper mass is carved by a single horizontal opening that frames the street while shielding the interior from western sun.",
-      "The material palette is deliberately reduced — board-formed concrete, dark timber louvres and glass — so that light and shadow become the primary ornament across the day.",
+      "ZO City is envisioned as a next-generation mixed-use development that integrates industrial, commercial, and civic functions within a master-planned smart city environment. The concept emphasizes connectivity, economic growth, and sustainable urban development through strategically organized industrial zones, commercial centers, public spaces, and supporting infrastructure.",
+      "Designed to accommodate future expansion and technological innovation, the development promotes efficient mobility, business opportunities, and a balanced live-work ecosystem. Through advanced planning and visualization, ZO City presents a forward-looking vision for a modern industrial and commercial hub in Cavite, Philippines.",
     ],
-    cover: project01,
+    cover: aerialPerspective,
     gallery: [
-      { image: project01, caption: "North elevation, dusk" },
-      { image: project02, caption: "Living volume, natural light study" },
-      { image: detail03, caption: "Longitudinal section A-A" },
-      { image: detail02, caption: "Site plan and elevations" },
+      { image: c1Pospro, caption: "C1 Perspective View" },
+      { image: c2PosproBright, caption: "C2 Perspective - Bright" },
+      { image: c2Pospro, caption: "C2 Perspective View" },
+      { image: highRiseVisualization, caption: "High Rise Visualization" },
     ],
     facts: [
-      { label: "Status", value: "Design Development" },
-      { label: "Area", value: "312 sqm" },
-      { label: "Role", value: "Design & Documentation" },
-      { label: "Tools", value: "Revit · Lumion · Illustrator" },
+      { label: "Status", value: "Concept Design" },
+      { label: "Type", value: "Smart Industrial City" },
+      { label: "Role", value: "Architectural Design Services" },
+      { label: "Tools", value: "AutoCAD · SketchUp Pro · Lumion 12.5 · Adobe Photoshop 2026" },
     ],
   },
   {
-    slug: "atelier-grid",
+    slug: "project-noir",
     code: "PROJECT / 002",
-    name: "Atelier Grid",
-    type: "Studio & Workspace",
-    location: "Manila, Philippines",
-    year: "2024",
+    name: "Project NOIR - Black Rose Asia",
+    type: "Esports Merch Booth",
+    location: "Makati, Philippines",
+    year: "2026",
     summary:
-      "An adaptive-reuse creative studio built on a strict 1.2 m planning grid with movable partitions.",
+      "A dedicated merchandise booth design for Black Rose esports community, featuring clear spatial zoning for retail, display, and administrative functions.",
     description: [
-      "The brief asked for a workspace that could change weekly. A 1.2 metre grid governs structure, lighting and partitions, allowing rooms to be redrawn without touching services.",
-      "Daylight is pulled deep into the plan through a linear clerestory that runs the full length of the building.",
+      "Black Rose is a fast-growing gaming and esports community founded by Alodia Gosiengfiao and Johan Andrew 'JAO' Ocampo. Initially established as an MMORPG guild, it has since expanded into a thriving community centered on streaming, content creation, and competitive esports, including VALORANT. To support its growing brand presence, architect and community member Ar. Jervin 'Coyha' Habagat proposed the design of a dedicated merchandise booth for events and activations.",
+      "Project Noir is designed to support the operational and retail needs of Black Rose Merch through a clear spatial zoning strategy. The floor plan is divided into three main zones: Outside Zone (information desk, play area, partner LED backdrop), Display Zone (cashier and merchandise display area), and Private Zone (manager's office and stock room for administrative and storage functions).",
     ],
-    cover: project02,
+    cover: projectNoirP1,
     gallery: [
-      { image: project02, caption: "Main studio floor" },
-      { image: detail01, caption: "Wall section detail" },
-      { image: heroArchitecture, caption: "Street frontage" },
+      { image: projectNoirP2, caption: "Exterior View - Front Facade" },
+      { image: projectNoirP3, caption: "Exterior View - Side Perspective" },
+      { image: projectNoirP4, caption: "Exterior View - Booth Entrance" },
+      { image: projectNoirP5, caption: "Exterior View - LED Backdrop" },
+      { image: projectNoirP6, caption: "Exterior View - Play Area" },
+      { image: projectNoirP7, caption: "Exterior View - Information Desk" },
+      { image: projectNoirP8, caption: "Exterior View - Display Zone" },
+      { image: projectNoirP9, caption: "Exterior View - Merchandise Display" },
+      { image: projectNoirP10, caption: "Exterior View - Cashier Station" },
+      { image: projectNoirP11, caption: "Exterior View - Night Lighting" },
+      { image: projectNoirP115, caption: "Exterior View - Alternative Angle" },
+      { image: projectNoirP12, caption: "Exterior View - Detailed View" },
+      { image: projectNoirP13, caption: "Exterior View - Material Detail" },
+      { image: projectNoirP14, caption: "Exterior View - Branding Integration" },
+      { image: projectNoirP15, caption: "Exterior View - Signage Detail" },
+      { image: projectNoirP16, caption: "Exterior View - Structural Element" },
+      { image: projectNoirP17, caption: "Exterior View - Lighting Fixture" },
+      { image: projectNoirP18, caption: "Exterior View - Panoramic Shot" },
+      { image: projectNoirP19, caption: "Exterior View - Wide Angle" },
+      { image: projectNoirP20, caption: "Exterior View - Context Shot" },
+      { image: projectNoirInteriorP1, caption: "Interior View - Manager's Office" },
+      { image: projectNoirInteriorP2, caption: "Interior View - Stock Room" },
+      { image: projectNoirInteriorP3, caption: "Interior View - Storage Layout" },
+      { image: projectNoirInteriorP4, caption: "Interior View - Administrative Space" },
+      { image: projectNoirInteriorP5, caption: "Interior View - Work Station" },
+      { image: projectNoirInteriorP6, caption: "Interior View - Shelving Detail" },
+      { image: projectNoirInteriorP7, caption: "Interior View - Storage System" },
+      { image: projectNoirInteriorP8, caption: "Interior View - Interior Lighting" },
+      { image: projectNoirInteriorP9, caption: "Interior View - Material Finish" },
+      { image: projectNoirInteriorP10, caption: "Interior View - Panoramic Interior" },
+      { image: projectNoirInteriorP11, caption: "Interior View - Detail Shot" },
     ],
     facts: [
-      { label: "Status", value: "Built" },
-      { label: "Area", value: "480 sqm" },
-      { label: "Role", value: "Lead Designer" },
-      { label: "Tools", value: "AutoCAD · SketchUp · Enscape" },
+      { label: "Status", value: "Schematic Design" },
+      { label: "Type", value: "Esports Merch Booth" },
+      { label: "Role", value: "Architectural Design Services" },
+      { label: "Tools", value: "AutoCAD · SketchUp Pro · Lumion 12.5 · Adobe Photoshop 2026" },
     ],
   },
   {
-    slug: "hillside-pavilion",
+    slug: "calix-wonder-bedroom",
     code: "PROJECT / 003",
-    name: "Hillside Pavilion",
-    type: "Public Pavilion",
-    location: "Bohol, Philippines",
+    name: "Calix Wonder Bedroom",
+    type: "Sensory-Friendly Bedroom",
+    location: "Pampanga, Philippines",
     year: "2023",
     summary:
-      "A lightweight viewing pavilion stepping along a slope, documented as a full presentation set.",
+      "A proposed sensory-friendly bedroom designed for a child on the autism spectrum, creating a haven of comfort and tranquility.",
     description: [
-      "A sequence of thin platforms follows the natural contour, each one calibrated to a specific view. The roof reads as a single plane hovering above the terrain.",
-      "Documentation was produced as a complete presentation board: site strategy, plans, sections and construction details.",
+      "We believe every space should be a haven of comfort and tranquility. In this endeavor, we've poured our hearts into crafting a space that truly understands and caters to the unique needs of a child on the autism spectrum. Every element in this bedroom has been thoughtfully considered to provide a sanctuary where every child can thrive and find peace.",
+      "The design focuses on sensory-friendly features, calming color palettes, and thoughtful spatial organization to create an environment that supports the well-being and development of children with special needs.",
     ],
-    cover: heroArchitecture,
+    cover: wmp10,
     gallery: [
-      { image: heroArchitecture, caption: "Approach view" },
-      { image: detail02, caption: "Contour and elevation study" },
-      { image: detail03, caption: "Cross section" },
+      { image: wmp11, caption: "Perspective View 1.1 - Main Bedroom" },
+      { image: wmp12, caption: "Perspective View 1.2 - Alternative Angle" },
+      { image: wmp21, caption: "Perspective View 2.1 - Study Area" },
+      { image: wmp22, caption: "Perspective View 2.2 - Work Station" },
+      { image: wmp31, caption: "Perspective View 3.1 - Sleeping Zone" },
+      { image: wmp32, caption: "Perspective View 3.2 - Bed Detail" },
+      { image: wmp41, caption: "Perspective View 4.1 - Storage Solution" },
+      { image: wmp42, caption: "Perspective View 4.2 - Organized Space" },
+      { image: wmp51, caption: "Perspective View 5.1 - Lighting Design" },
+      { image: wmp52, caption: "Perspective View 5.2 - Ambient Light" },
+      { image: wmp61, caption: "Perspective View 6.1 - Material Palette" },
+      { image: wmp62, caption: "Perspective View 6.2 - Texture Detail" },
     ],
     facts: [
-      { label: "Status", value: "Concept" },
-      { label: "Area", value: "140 sqm" },
-      { label: "Role", value: "Design & Visualisation" },
-      { label: "Tools", value: "SketchUp · Lumion · InDesign" },
+      { label: "Status", value: "Proposed Design" },
+      { label: "Type", value: "Sensory-Friendly Interior" },
+      { label: "Role", value: "Architectural Interior and 3D Visualization" },
+      {
+        label: "Tools",
+        value: "AutoCAD · SketchUp Pro · 3Ds MAX · Corona Render · Adobe Photoshop 2022",
+      },
     ],
   },
 ];
@@ -219,96 +282,96 @@ export type Work = {
   image: string;
 };
 
-export const blackRose: Work[] = [
+export const blackRoseCreators: Work[] = [
   {
     code: "GRAPHICS / 001",
-    title: "Launch Campaign Key Art",
-    type: "Social Campaign",
-    description: "Key visual system for a multi-platform content launch.",
-    image: gfx01,
+    title: "Centminus",
+    type: "Creator Spotlight",
+    description: "Content creator spotlight graphic design.",
+    image: centminusCC,
   },
   {
     code: "GRAPHICS / 002",
-    title: "Event Poster Series",
-    type: "Event Graphics",
-    description: "Three-part poster set with a shared typographic grid.",
-    image: gfx02,
+    title: "Chewie",
+    type: "Creator Spotlight",
+    description: "Content creator spotlight graphic design.",
+    image: chewieCC,
   },
   {
     code: "GRAPHICS / 003",
-    title: "Brand Asset Pack",
-    type: "Branding",
-    description: "Logos, overlays and lower-thirds for creator content.",
-    image: graphicsCover,
+    title: "Tadabadum",
+    type: "Creator Spotlight",
+    description: "Content creator spotlight graphic design.",
+    image: tadabadumCC,
   },
   {
     code: "GRAPHICS / 004",
-    title: "Promotional Story Set",
-    type: "Promotional",
-    description: "Vertical promo templates built for fast weekly output.",
-    image: gfx01,
+    title: "Tortalong",
+    type: "Creator Spotlight",
+    description: "Content creator spotlight graphic design.",
+    image: tortalongCC,
   },
 ];
 
-export const gfxSamples: Work[] = [
+export const gfxSamplesImages: Work[] = [
   {
     code: "GFX / 005",
-    title: "Geometric Composition",
-    type: "Editorial",
-    description: "Grid-driven poster exploring negative space.",
-    image: gfx01,
+    title: "AKG Announcement",
+    type: "Social Media",
+    description: "1:1 announcement graphic for social media promotion.",
+    image: akgAnnouncement,
   },
   {
     code: "GFX / 006",
-    title: "Torn Paper Study",
-    type: "Art Direction",
-    description: "Analogue collage translated into a digital layout.",
-    image: gfx02,
+    title: "AKG Main Cover",
+    type: "Cover Design",
+    description: "Main cover announcement graphic design.",
+    image: akgMainCover,
   },
   {
     code: "GFX / 007",
-    title: "Monochrome Cover",
-    type: "Print",
-    description: "Cover concept for a self-published portfolio zine.",
-    image: graphicsCover,
+    title: "Road to Tier 10",
+    type: "Social Media",
+    description: "Facebook poster graphic design for gaming progression.",
+    image: roadToTier10,
   },
   {
     code: "GFX / 008",
-    title: "Layout System",
-    type: "Editorial",
-    description: "Modular spread system for long-form documents.",
-    image: gfx01,
+    title: "Mortal Kombat II - Black Rose Crew",
+    type: "Team Graphic",
+    description: "Team/group promotional graphic design.",
+    image: blackroseCrew,
   },
   {
     code: "GFX / 009",
-    title: "Contrast Study",
-    type: "Illustration",
-    description: "Shape and light study rendered in pure black and white.",
-    image: gfx02,
+    title: "Is This Joel",
+    type: "Content Graphic",
+    description: "Meme-style graphic design.",
+    image: isThisJoel,
+  },
+  {
+    code: "GFX / 010",
+    title: "Titas of When in Manila",
+    type: "Social Media",
+    description: "Facebook promotional graphic design.",
+    image: titasOfWheninManila,
   },
 ];
 
-export const thumbnails: Work[] = [
+export const thumbnailDesignImages: Work[] = [
   {
     code: "THUMB / 010",
-    title: "Documentary Episode 04",
+    title: "LTK VLOG 1",
     type: "YouTube Thumbnail",
-    description: "High-contrast crop with a single gold light cue.",
-    image: thumb01,
+    description: "Vlog thumbnail design - edited video content.",
+    image: ltkVlog,
   },
   {
     code: "THUMB / 011",
-    title: "Studio Tour",
+    title: "WWM - The Novellino Deal",
     type: "YouTube Thumbnail",
-    description: "Architectural framing with restrained type placement.",
-    image: graphicsCover,
-  },
-  {
-    code: "THUMB / 012",
-    title: "Design Breakdown",
-    type: "YouTube Thumbnail",
-    description: "Split composition built for small-screen legibility.",
-    image: video01,
+    description: "Video content thumbnail - Where Winds Game.",
+    image: wwmNovellino,
   },
 ];
 
@@ -335,7 +398,8 @@ export const longForm: VideoWork[] = [
   {
     code: "VIDEO / 002",
     title: "BACKEND — Black Rose Event Vlog",
-    description: "Vlog about the event we had as part of the Black Rose Community in VALORANT Creator Brawl + Black Rose Grand Finals official event.",
+    description:
+      "Vlog about the event we had as part of the Black Rose Community in VALORANT Creator Brawl + Black Rose Grand Finals official event.",
     duration: "Event Vlog",
     category: "Vlog",
     video: backendBlackRose,
@@ -363,7 +427,7 @@ export const shortForm: VideoWork[] = [
   },
   {
     code: "VIDEO / 005",
-    title: "VALORANT Kalungkutan",
+    title: "VALORANT Quotes",
     description: "Malungkutan na hugot while playing Valorant.",
     duration: "Short",
     category: "Gaming",
@@ -371,8 +435,8 @@ export const shortForm: VideoWork[] = [
   },
   {
     code: "VIDEO / 006",
-    title: "CSGO2 Funny Moment ft. Jac",
-    description: "Funny moment while playing CSGO2 game.",
+    title: "CS2 Funny Moment ft. Jac",
+    description: "Funny moment while playing CS2 game.",
     duration: "Short",
     category: "Gaming",
     video: solidLiquidGas,
