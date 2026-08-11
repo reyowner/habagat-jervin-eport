@@ -4,6 +4,7 @@ import { VideoCard } from "@/features/video/components/VideoCard";
 import { VideoModal } from "@/features/video/components/VideoModal";
 import { useVideoModal } from "@/features/video/hooks/useVideoModal";
 import { longForm, shortForm, NAME } from "@/data/portfolio";
+import headerContentCreation from "@/assets/header-contentcreation-video.jpg";
 
 export const Route = createFileRoute("/video")({
   head: () => ({
@@ -43,8 +44,17 @@ function Video() {
         </div>
       </section>
 
-      <section className="border-b border-hairline">
-        <div className="mx-auto max-w-[1600px] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
+      <section className="border-b border-hairline relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={headerContentCreation}
+            alt="Content Creation"
+            className="h-full w-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
+        </div>
+
+        <div className="relative mx-auto max-w-[1600px] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
           <SectionHeader index="VIDEO / 001" title="Content Creation" meta="Content Production" />
 
           <div className="mt-12 grid gap-10 lg:grid-cols-2">
@@ -72,10 +82,10 @@ function Video() {
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
                   { platform: "YouTube", handle: "@Coy_ha", url: "https://www.youtube.com/@Coy_ha", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]", role: "My Channel" },
-                  { platform: "YouTube", handle: "@TortaLongTTV", url: "https://www.youtube.com/@TortaLongTTV", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]", role: "Client Channel" },
-                  { platform: "Facebook", handle: "TortaLongTTV", url: "https://www.facebook.com/TorTalongTTV", icon: "/icons8-facebook-48.png", color: "hover:border-[#1877F2]", role: "Client Channel" },
-                  { platform: "TikTok", handle: "@tortalong_tv", url: "https://www.tiktok.com/@tortalong_tv?lang=en", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]", role: "Client Channel" },
                   { platform: "TikTok", handle: "@coy_ha", url: "https://www.tiktok.com/@coy_ha", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]", role: "My Channel" },
+                  { platform: "YouTube", handle: "@TortaLongTTV", url: "https://www.youtube.com/@TortaLongTTV", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]", role: "Client Channel" },
+                  { platform: "TikTok", handle: "@tortalong_tv", url: "https://www.tiktok.com/@tortalong_tv?lang=en", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]", role: "Client Channel" },
+                  { platform: "Facebook", handle: "TortaLongTTV", url: "https://www.facebook.com/TorTalongTTV", icon: "/icons8-facebook-48.png", color: "hover:border-[#1877F2]", role: "Client Channel" },
                   { platform: "Twitch", handle: "tortalong_tv", url: "https://www.twitch.tv/tortalong_tv", icon: "/icons8-twitch-48.png", color: "hover:border-[#9146FF]", role: "Client Channel" },
                 ].map((item) => (
                   <a
