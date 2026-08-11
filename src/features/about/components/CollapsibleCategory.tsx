@@ -19,7 +19,7 @@ export function CollapsibleCategory({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between text-left"
+        className="flex w-full cursor-pointer items-center justify-between text-left"
       >
         <span className="text-sm font-medium text-foreground">{category}</span>
         <span className="label text-muted-foreground">{isOpen ? "−" : "+"}</span>

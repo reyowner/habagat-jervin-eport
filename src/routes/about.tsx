@@ -38,7 +38,7 @@ function About() {
             <br />
             Graphics.
             <br />
-            <span className="text-muted-foreground">Motion.</span>
+            <span className="text-[oklch(0.78_0.11_85_/_0.65)]">Motion.</span>
           </h1>
         </div>
       </section>
@@ -97,7 +97,7 @@ function About() {
               </div>
 
               <div>
-                <Label accent>Software</Label>
+                <Label accent>Software Tools</Label>
                 <div className="mt-5 space-y-4">
                   {SOFTWARE.map((category) => (
                     <CollapsibleCategory
