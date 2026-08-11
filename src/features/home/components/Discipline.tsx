@@ -53,9 +53,7 @@ export function Discipline({
                     }`}
                   />
                 </div>
-                <figcaption className="label mt-3 text-muted-foreground">
-                  {item.caption}
-                </figcaption>
+                <figcaption className="label mt-3 text-muted-foreground">{item.caption}</figcaption>
               </figure>
             ))}
           </div>

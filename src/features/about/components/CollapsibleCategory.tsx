@@ -27,10 +27,7 @@ export function CollapsibleCategory({
       {isOpen && (
         <div className="mt-3 flex flex-wrap gap-2">
           {items.map((item) => (
-            <span
-              key={item}
-              className="label border border-hairline px-3 py-1.5 text-xs"
-            >
+            <span key={item} className="label border border-hairline px-3 py-1.5 text-xs">
               {item}
             </span>
           ))}

@@ -16,9 +16,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <h2 className="display text-3xl sm:text-4xl">{NAME}</h2>
-            <p className="label mt-4 text-muted-foreground">
-              Architecture · Graphics · Video
-            </p>
+            <p className="label mt-4 text-muted-foreground">Architecture · Graphics · Video</p>
           </div>
 
           <div>
@@ -86,9 +84,7 @@ export function Footer() {
           <span className="label text-muted-foreground">
             © 2026 {NAME.toUpperCase()} — PORTFOLIO
           </span>
-          <span className="label text-muted-foreground">
-            LAT 10.3157° N / LON 123.8854° E
-          </span>
+          <span className="label text-muted-foreground">LAT 10.3157° N / LON 123.8854° E</span>
         </div>
       </div>
     </footer>

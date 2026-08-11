@@ -51,11 +51,7 @@ export function VideoCard({ video, onClick, variant }: VideoCardProps) {
   }
 
   return (
-    <button
-      type="button"
-      onClick={() => onClick(video)}
-      className="group min-w-0 text-left"
-    >
+    <button type="button" onClick={() => onClick(video)} className="group min-w-0 text-left">
       <div className="relative overflow-hidden">
         {video.image ? (
           <img

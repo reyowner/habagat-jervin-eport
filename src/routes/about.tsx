@@ -59,26 +59,26 @@ function About() {
 
           <div className="min-w-0">
             <p className="text-xl leading-relaxed sm:text-2xl">
-              {NAME} — a Filipino architect, 3D visualizer, creative designer,
-              illustrator, and multimedia designer based in Bataan, Philippines.
+              {NAME} — a Filipino architect, 3D visualizer, creative designer, illustrator, and
+              multimedia designer based in Bataan, Philippines.
             </p>
             <div className="mt-8 space-y-6 text-muted-foreground">
               <p>
-                A passionate freelance architect and co-founder of HACARA+ Architects,
-                dedicated to creating transformative designs that enhance people&apos;s lives
-                and contribute to the productivity and efficiency of businesses.
+                A passionate freelance architect and co-founder of HACARA+ Architects, dedicated to
+                creating transformative designs that enhance people&apos;s lives and contribute to
+                the productivity and efficiency of businesses.
               </p>
               <p>
-                My work combines architectural design, space planning, conceptualization,
-                3D modeling, architectural visualization, graphic design, illustration, and
-                multimedia. I aim to create thoughtful and impactful design solutions that
-                elevate the lives of their users while balancing creativity, functionality,
-                aesthetics, and technical considerations.
+                My work combines architectural design, space planning, conceptualization, 3D
+                modeling, architectural visualization, graphic design, illustration, and multimedia.
+                I aim to create thoughtful and impactful design solutions that elevate the lives of
+                their users while balancing creativity, functionality, aesthetics, and technical
+                considerations.
               </p>
               <p>
-                With a strong background in both architecture and visual communication, I
-                transform architectural ideas, plans, and references into compelling
-                visualizations, presentations, and design solutions.
+                With a strong background in both architecture and visual communication, I transform
+                architectural ideas, plans, and references into compelling visualizations,
+                presentations, and design solutions.
               </p>
             </div>
 
@@ -129,13 +129,12 @@ function About() {
             ))}
           </ul>
 
-          <Label accent className="mt-16 block">Education</Label>
+          <Label accent className="mt-16 block">
+            Education
+          </Label>
           <ul className="mt-10">
             {EDUCATION.map((e) => (
-              <li
-                key={e.institution}
-                className="border-t border-hairline py-6"
-              >
+              <li key={e.institution} className="border-t border-hairline py-6">
                 <div className="grid gap-2 sm:grid-cols-[220px_1fr] sm:items-baseline sm:gap-8">
                   <span className="label text-muted-foreground">{e.year}</span>
                   <div>

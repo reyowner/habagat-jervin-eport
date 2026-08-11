@@ -7,7 +7,10 @@ interface OpportunitySelectorProps {
   onSelect: (type: OpportunityType) => void;
 }
 
-export const OpportunitySelector = memo(function OpportunitySelector({ selected, onSelect }: OpportunitySelectorProps) {
+export const OpportunitySelector = memo(function OpportunitySelector({
+  selected,
+  onSelect,
+}: OpportunitySelectorProps) {
   return (
     <div>
       <span className="label text-muted-foreground">Opportunity Type</span>

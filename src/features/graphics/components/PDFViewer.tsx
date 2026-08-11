@@ -24,14 +24,10 @@ export function PDFViewer({ images, name }: PDFViewerProps) {
             loading="lazy"
             className="max-h-64 w-auto"
           />
-          <p className="label text-paper-foreground">
-            Preview unavailable — open the portfolio
-          </p>
+          <p className="label text-paper-foreground">Preview unavailable — open the portfolio</p>
         </div>
       </object>
-      <span className="label absolute -top-6 left-0 text-accent">
-        GRAPHICS / PDF
-      </span>
+      <span className="label absolute -top-6 left-0 text-accent">GRAPHICS / PDF</span>
     </div>
   );
 }
