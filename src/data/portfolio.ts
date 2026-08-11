@@ -52,6 +52,11 @@ import wmp62 from "@/assets/Architectural/Projects/3rd/WMP.6.2 copy.png";
 import detailSample1 from "@/assets/Architectural/Detail/1st/Thumbnail for Razan Salhi ID Sheets.png";
 import detailSample2 from "@/assets/Architectural/Detail/2nd/Thumbnail for TROPIQUE CAFE AND BAR - DESIGN DEVELOPMENT SHEET.png";
 import detailSample3 from "@/assets/Architectural/Detail/3rd/Thumbnail for Complete Sheet for Ar.B.B.png";
+import bristinaExterior from "@/assets/Architectural/Projects/4th/Bristina_Exterior01 UW.jpg";
+import bristinaInterior1 from "@/assets/Architectural/Projects/4th/Bristina_Interior01 JPG.jpg";
+import bristinaInterior2 from "@/assets/Architectural/Projects/4th/Bristina_Interior02.png";
+import bristinaInterior3 from "@/assets/Architectural/Projects/4th/Bristina_Interior03 JPG.jpg";
+import bristinaInterior4 from "@/assets/Architectural/Projects/4th/Bristina_Interior04 JPG.jpg";
 import backdoorGastropub from "@/assets/Long-Form_Vids/Backdoor Gastropub - Architectural Animation.mp4";
 import backendBlackRose from "@/assets/Long-Form_Vids/BACKEND _  Black Rose.mp4";
 import ecomCity from "@/assets/Long-Form_Vids/ECOM City Conceptualization - Video Presentation Walkthrough.mp4";
@@ -59,6 +64,12 @@ import lakasMakapanot from "@/assets/Short-Form_Vids/LAKAS MAKAPANOT!.mp4";
 import pinagpalit from "@/assets/Short-Form_Vids/Pinagpalit sa mas mataas rank.mp4";
 import solidLiquidGas from "@/assets/Short-Form_Vids/SOOOOOLID LIQUID GAS!!! ft Jac.mp4";
 import walangMaiiwan from "@/assets/Short-Form_Vids/Walang maiiwan sa pamilya [PUBG Pt.2].mp4";
+import novellinoEsports from "@/assets/Short-Form_Vids/NovellinoEsports.mp4";
+import pabuhatPo from "@/assets/Short-Form_Vids/PabuhatPo.mp4";
+import scamHorror from "@/assets/Short-Form_Vids/ScamHorror.mp4";
+import unangBukas from "@/assets/Short-Form_Vids/UnangBukas.mp4";
+import novellinoEsportsThumb from "@/assets/Short-Form_Vids/Thumbnail for Video 008.png";
+import scamHorrorThumb from "@/assets/Short-Form_Vids/Thumbnail for Video 010.png";
 import thumbnailBackdoor from "@/assets/Thumbnail for Backdoor Gastropub.png";
 import thumbnailEcom from "@/assets/Thumbnail for ECOM City Conceptualization.png";
 import thumbnailBackend from "@/assets/Thumbnail for BACKEND — Black Rose Event Vlog.png";
@@ -72,9 +83,13 @@ import roadToTier10 from "@/assets/GFX/GFX Sample/ROADTOTIER10-FB POSTER.jpg";
 import alagadNiBoss from "@/assets/GFX/GFX Sample/ALAGAD NI BOSS A.png";
 import blackroseCrew from "@/assets/GFX/GFX Sample/BLACKROSE CREW.png";
 import isThisJoel from "@/assets/GFX/GFX Sample/IsThisJoel.jpg";
+import valorantShannonWilliams from "@/assets/GFX/GFX Sample/ValorantShannonWilliams.png";
+import whatHeadset from "@/assets/GFX/GFX Sample/WhatHeadset.jpg";
 import titasOfWheninManila from "@/assets/GFX/GFX Sample/TitasOfWheninManila-Facebook.jpg";
 import ltkVlog from "@/assets/GFX/Thumbnail Design/LTK-VLOG1.png";
 import wwmNovellino from "@/assets/GFX/Thumbnail Design/WWM-THE NOVELLINO DEAL.png";
+import wwmBlackroseVsBakunawa from "@/assets/GFX/Thumbnail Design/WWM-BLACKROSEVSBAKUNAWA1.png";
+import wwmBlackroseVsAbaddon from "@/assets/GFX/Thumbnail Design/WWM-BLACKROSEVSABADDON2.png";
 
 export const images = {
   portrait,
@@ -110,7 +125,7 @@ export const detailSamples: DetailSample[] = [
       "Custom entertainment unit design developed through detailed elevations, plans, material specifications, and perspective studies. The project explores two design options incorporating wood slat panels, integrated LED lighting, laminated plywood cabinetry, overhead shelving, and custom storage.",
     category: "Residential Interior Design",
     year: "2023",
-    tools: "AutoCAD · Adobe Illustrator",
+    tools: "AutoCAD · Sketchup Layout",
     image: detailSample1,
     link: "https://drive.google.com/file/d/1VSIK1az7RoYQh8xmN6_n_IYMe_XYZpOF/view?usp=sharing",
   },
@@ -121,7 +136,7 @@ export const detailSamples: DetailSample[] = [
       "Design development for a tropical/boho-inspired cafe and bar interior in Lapu-Lapu City, Cebu. The project includes floor planning, reflected ceiling design, interior elevations, sections, kitchen planning, staff/service areas, and vanity/toilet design.",
     category: "Hospitality Interior Design",
     year: "2023",
-    tools: "AutoCAD · Adobe Illustrator",
+    tools: "AutoCAD · Sketchup Layout",
     image: detailSample2,
     link: "https://drive.google.com/file/d/1PQyzrX9wpkBgnnRW7Soy2M_wLcjzw1Dv/view?usp=sharing",
   },
@@ -132,7 +147,7 @@ export const detailSamples: DetailSample[] = [
       "Architectural interior renovation documentation for a healthcare/osteopathy clinic in Central, Hong Kong. The project includes general arrangement planning, reflected ceiling design, floor finishes, interior elevations, reception detailing, treatment rooms, office and staff areas, lighting, cabinetry, and acoustic treatments.",
     category: "Healthcare Interior Design",
     year: "2025",
-    tools: "AutoCAD · Adobe Illustrator",
+    tools: "AutoCAD · Sketchup Layout",
     image: detailSample3,
     link: "https://drive.google.com/file/d/1BJRzYmHlfAjvjN58I6b8RV6n324IoWvm/view?usp=sharing",
   },
@@ -161,7 +176,7 @@ export const projects: Project[] = [
     location: "Cavite, Philippines",
     year: "2026",
     summary:
-      "Envisioned as a next-generation mixed-use development, ZO City integrates industrial, commercial, and civic functions within a master-planned smart city environment.",
+      "ZO City is envisioned as a next-generation mixed-use development that integrates industrial, commercial, and civic functions within a cohesive master-planned smart city environment. The project explores large-scale urban planning, zoning, circulation, and the integration of diverse programs into a unified development. The master plan organizes industrial facilities alongside commercial and civic spaces, supported by carefully planned road networks, public areas, and landscape elements. The overall design aims to create an efficient, connected, and future-ready urban environment that balances productivity, accessibility, and community needs.",
     description: [
       "ZO City is envisioned as a next-generation mixed-use development that integrates industrial, commercial, and civic functions within a master-planned smart city environment. The concept emphasizes connectivity, economic growth, and sustainable urban development through strategically organized industrial zones, commercial centers, public spaces, and supporting infrastructure.",
       "Designed to accommodate future expansion and technological innovation, the development promotes efficient mobility, business opportunities, and a balanced live-work ecosystem. Through advanced planning and visualization, ZO City presents a forward-looking vision for a modern industrial and commercial hub in Cavite, Philippines.",
@@ -188,7 +203,7 @@ export const projects: Project[] = [
     location: "Makati, Philippines",
     year: "2026",
     summary:
-      "A dedicated merchandise booth design for Black Rose esports community, featuring clear spatial zoning for retail, display, and administrative functions.",
+      "Black Rose is a fast-growing gaming and esports community founded by Alodia Gosiengfiao and Johan Andrew 'JAO' Ocampo. Initially established as an MMORPG guild, it has since expanded into a thriving community centered on streaming, content creation, and competitive esports, including VALORANT. To support its growing brand presence, architect and community member Ar. Jervin 'Coyha' Habagat proposed the design of a dedicated merchandise booth for events and activations.",
     description: [
       "Black Rose is a fast-growing gaming and esports community founded by Alodia Gosiengfiao and Johan Andrew 'JAO' Ocampo. Initially established as an MMORPG guild, it has since expanded into a thriving community centered on streaming, content creation, and competitive esports, including VALORANT. To support its growing brand presence, architect and community member Ar. Jervin 'Coyha' Habagat proposed the design of a dedicated merchandise booth for events and activations.",
       "Project Noir is designed to support the operational and retail needs of Black Rose Merch through a clear spatial zoning strategy. The floor plan is divided into three main zones: Outside Zone (information desk, play area, partner LED backdrop), Display Zone (cashier and merchandise display area), and Private Zone (manager's office and stock room for administrative and storage functions).",
@@ -242,7 +257,7 @@ export const projects: Project[] = [
     location: "Pampanga, Philippines",
     year: "2023",
     summary:
-      "A proposed sensory-friendly bedroom designed for a child on the autism spectrum, creating a haven of comfort and tranquility.",
+      "Every space should provide a sense of comfort, security, and tranquility. This project focuses on creating a thoughtfully designed bedroom tailored to the unique needs of a child on the autism spectrum. Each element has been carefully considered to create a calming and supportive environment that promotes comfort, independence, and a sense of belonging — providing a safe space where the child can rest, grow, and thrive.",
     description: [
       "We believe every space should be a haven of comfort and tranquility. In this endeavor, we've poured our hearts into crafting a space that truly understands and caters to the unique needs of a child on the autism spectrum. Every element in this bedroom has been thoughtfully considered to provide a sanctuary where every child can thrive and find peace.",
       "The design focuses on sensory-friendly features, calming color palettes, and thoughtful spatial organization to create an environment that supports the well-being and development of children with special needs.",
@@ -270,6 +285,33 @@ export const projects: Project[] = [
         label: "Tools",
         value: "AutoCAD · SketchUp Pro · 3Ds MAX · Corona Render · Adobe Photoshop 2022",
       },
+    ],
+  },
+  {
+    slug: "sunny-bristina",
+    code: "PROJECT / 004",
+    name: "Sunny Bristina",
+    type: "Modern Residential",
+    location: "Steamboat Springs, Colorado",
+    year: "2023",
+    summary:
+      "A proposed interior and exterior visualization for a modern residential project located in Steamboat Springs, Colorado. The design emphasizes contemporary aesthetics, functional living spaces, and seamless integration with the natural surroundings.",
+    description: [
+      "Sunny Bristina is a modern residential project located in Steamboat Springs, Colorado, featuring contemporary design elements that blend harmoniously with the natural landscape. The visualization showcases both exterior and interior spaces, highlighting the thoughtful integration of modern architectural principles with comfortable living environments.",
+      "The project demonstrates expertise in 3D modeling and architectural visualization, using tools like SketchUp, Lumion, and Photoshop to create compelling visual representations of the proposed design. The exterior design emphasizes clean lines and modern forms, while the interior spaces focus on functionality, natural light, and material quality.",
+    ],
+    cover: bristinaExterior,
+    gallery: [
+      { image: bristinaInterior1, caption: "Interior View 01" },
+      { image: bristinaInterior2, caption: "Interior View 02" },
+      { image: bristinaInterior3, caption: "Interior View 03" },
+      { image: bristinaInterior4, caption: "Interior View 04" },
+    ],
+    facts: [
+      { label: "Status", value: "Proposed Design" },
+      { label: "Type", value: "Modern Residential" },
+      { label: "Role", value: "3D Modeling and Architecture Visualization" },
+      { label: "Tools", value: "AutoCAD · SketchUp · Lumion · Adobe Photoshop" },
     ],
   },
 ];
@@ -323,10 +365,10 @@ export const gfxSamplesImages: Work[] = [
   },
   {
     code: "GFX / 006",
-    title: "AKG Main Cover",
+    title: "What Headset",
     type: "Cover Design",
-    description: "Main cover announcement graphic design.",
-    image: akgMainCover,
+    description: "Headset-related graphic design.",
+    image: whatHeadset,
   },
   {
     code: "GFX / 007",
@@ -344,10 +386,10 @@ export const gfxSamplesImages: Work[] = [
   },
   {
     code: "GFX / 009",
-    title: "Is This Joel",
+    title: "Valorant Shannon Williams",
     type: "Content Graphic",
-    description: "Meme-style graphic design.",
-    image: isThisJoel,
+    description: "Valorant-themed graphic design.",
+    image: valorantShannonWilliams,
   },
   {
     code: "GFX / 010",
@@ -372,6 +414,20 @@ export const thumbnailDesignImages: Work[] = [
     type: "YouTube Thumbnail",
     description: "Video content thumbnail - Where Winds Game.",
     image: wwmNovellino,
+  },
+  {
+    code: "THUMB / 012",
+    title: "WWM - Black Rose vs Bakunawa",
+    type: "YouTube Thumbnail",
+    description: "Video content thumbnail - Where Winds Game.",
+    image: wwmBlackroseVsBakunawa,
+  },
+  {
+    code: "THUMB / 013",
+    title: "WWM - Black Rose vs Abaddon",
+    type: "YouTube Thumbnail",
+    description: "Video content thumbnail - Where Winds Game.",
+    image: wwmBlackroseVsAbaddon,
   },
 ];
 
@@ -448,5 +504,39 @@ export const shortForm: VideoWork[] = [
     duration: "Short",
     category: "Gaming",
     video: walangMaiiwan,
+  },
+  {
+    code: "VIDEO / 008",
+    title: "Arc Raiders Highlights",
+    description: "Arc Raiders extraction shooter gameplay highlights.",
+    duration: "Short",
+    category: "Gaming",
+    video: novellinoEsports,
+    image: novellinoEsportsThumb,
+  },
+  {
+    code: "VIDEO / 009",
+    title: "Arc Raiders Gameplay",
+    description: "Arc Raiders gameplay with squad.",
+    duration: "Short",
+    category: "Gaming",
+    video: pabuhatPo,
+  },
+  {
+    code: "VIDEO / 010",
+    title: "Arc Raiders Funny Moment",
+    description: "Arc Raiders funny moment gameplay clip.",
+    duration: "Short",
+    category: "Gaming",
+    video: scamHorror,
+    image: scamHorrorThumb,
+  },
+  {
+    code: "VIDEO / 011",
+    title: "Elden Ring Funny Moment",
+    description: "Elden Ring first gameplay experience.",
+    duration: "Short",
+    category: "Gaming",
+    video: unangBukas,
   },
 ];

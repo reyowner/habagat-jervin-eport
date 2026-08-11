@@ -34,7 +34,7 @@ export function Gallery({
                   src={w.image}
                   alt={w.title}
                   loading="lazy"
-                  className={`w-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${ratio}`}
+                  className={`w-full object-contain transition-transform duration-700 group-hover:scale-[1.03] ${ratio}`}
                 />
               </div>
               <div className="pointer-events-none absolute inset-0 flex flex-col justify-end bg-background/70 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">

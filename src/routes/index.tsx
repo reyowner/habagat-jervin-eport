@@ -51,15 +51,13 @@ function Home() {
             <h1 className="display mt-10 text-[clamp(2.75rem,8vw,6.5rem)]">
               Elevating Lifestyle through
               <br />
-              <span className="text-muted-foreground">Strategic Design</span>
+              <span className="text-[oklch(0.78_0.11_85_/_0.65)]">Strategic Design</span>
             </h1>
 
             <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              I&apos;m {NAME} — a Filipino architect, 3D visualizer, creative designer, illustrator,
-              and multimedia designer based in Bataan, Philippines. I&apos;m a passionate freelance
-              architect and co-founder of HACARA+ Architects, dedicated to creating transformative
-              designs that enhance people&apos;s lives and contribute to the productivity and
-              efficiency of businesses.
+              Helping people produce strategic architectural designs,
+              with the goal of enhancing people's lives and boosting
+              the productivity and efficiency of their businesses.
             </p>
 
             <div className="mt-12 flex flex-wrap gap-4">

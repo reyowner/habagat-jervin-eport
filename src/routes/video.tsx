@@ -45,35 +45,58 @@ function Video() {
 
       <section className="border-b border-hairline">
         <div className="mx-auto max-w-[1600px] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
-          <SectionHeader index="VIDEO / 001" title="Content Creation" meta="Social Platforms" />
+          <SectionHeader index="VIDEO / 001" title="Content Creation" meta="Content Production" />
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
-            {[
-              { platform: "YouTube", handle: "@Coy_ha", url: "https://www.youtube.com/@Coy_ha", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]" },
-              { platform: "YouTube", handle: "@TortaLongTTV", url: "https://www.youtube.com/@TortaLongTTV", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]" },
-              { platform: "Facebook", handle: "TortaLongTTV", url: "https://www.facebook.com/TorTalongTTV", icon: "/icons8-facebook-48.png", color: "hover:border-[#1877F2]" },
-              { platform: "TikTok", handle: "@tortalong_tv", url: "https://www.tiktok.com/@tortalong_tv?lang=en", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]" },
-              { platform: "TikTok", handle: "@coy_ha", url: "https://www.tiktok.com/@coy_ha", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]" },
-              { platform: "Twitch", handle: "tortalong_tv", url: "https://www.twitch.tv/tortalong_tv", icon: "/icons8-twitch-48.png", color: "hover:border-[#9146FF]" },
-            ].map((item) => (
-              <a
-                key={item.platform + item.handle}
-                href={item.url}
-                target="_blank"
-                rel="noreferrer"
-                className={`group relative overflow-hidden border border-hairline bg-background p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg ${item.color}`}
-              >
-                <div className="flex flex-col items-center text-center">
-                  <div className="relative mb-4">
-                    <div className="absolute inset-0 rounded-full bg-accent/20 blur-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    <img src={item.icon} alt={item.platform} className="relative w-12 h-12 transition-transform duration-300 group-hover:scale-110" />
-                  </div>
-                  <p className="label text-muted-foreground mb-1">{item.platform}</p>
-                  <p className="text-sm font-medium group-hover:text-accent transition-colors">{item.handle}</p>
+          <div className="mt-12 grid gap-10 lg:grid-cols-2">
+            {/* My Role */}
+            <div className="p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                  <span className="text-accent text-xl">🎬</span>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-accent/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              </a>
-            ))}
+                <div>
+                  <Label accent>My Role</Label>
+                  <p className="text-sm text-muted-foreground">Coyha — Stream Engineer, Video Editor & Graphics Designer</p>
+                </div>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                I provide video editing and graphics design services for content creators. Currently
+                working with Tortalong to produce engaging content across multiple social platforms,
+                handling everything from thumbnail design to video post-production.
+              </p>
+            </div>
+
+            {/* Platforms Grid */}
+            <div>
+              <Label accent className="mb-6 block">Platforms</Label>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {[
+                  { platform: "YouTube", handle: "@Coy_ha", url: "https://www.youtube.com/@Coy_ha", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]", role: "My Channel" },
+                  { platform: "YouTube", handle: "@TortaLongTTV", url: "https://www.youtube.com/@TortaLongTTV", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]", role: "Client Channel" },
+                  { platform: "Facebook", handle: "TortaLongTTV", url: "https://www.facebook.com/TorTalongTTV", icon: "/icons8-facebook-48.png", color: "hover:border-[#1877F2]", role: "Client Channel" },
+                  { platform: "TikTok", handle: "@tortalong_tv", url: "https://www.tiktok.com/@tortalong_tv?lang=en", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]", role: "Client Channel" },
+                  { platform: "TikTok", handle: "@coy_ha", url: "https://www.tiktok.com/@coy_ha", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]", role: "My Channel" },
+                  { platform: "Twitch", handle: "tortalong_tv", url: "https://www.twitch.tv/tortalong_tv", icon: "/icons8-twitch-48.png", color: "hover:border-[#9146FF]", role: "Client Channel" },
+                ].map((item) => (
+                  <a
+                    key={item.platform + item.handle}
+                    href={item.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`group relative overflow-hidden border border-hairline bg-background p-4 transition-all duration-300 hover:scale-105 hover:shadow-lg ${item.color}`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <img src={item.icon} alt={item.platform} className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
+                      <div className="flex-1 min-w-0">
+                        <p className="label text-muted-foreground text-xs">{item.platform}</p>
+                        <p className="text-sm font-medium group-hover:text-accent transition-colors truncate">{item.handle}</p>
+                      </div>
+                      <span className="label text-xs text-muted-foreground bg-hairline px-2 py-1">{item.role}</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
