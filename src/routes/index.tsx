@@ -12,6 +12,9 @@ import {
   blackroseCrew,
   ltkVlog,
 } from "@/data/portfolio";
+import home1 from "@/assets/home1.png";
+import home2 from "@/assets/home2.jpg";
+import home3 from "@/assets/home3.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -77,29 +80,29 @@ function Home() {
           </div>
 
           <div className="relative min-w-0">
-            <div className="relative h-[400px]">
+            <div className="relative h-[500px]">
               <div className="absolute left-0 top-0 animate-float">
-                <div className="border border-hairline bg-background px-6 py-4 shadow-lg">
-                  <Label accent>Architecture</Label>
-                  <p className="label mt-2 text-xs text-muted-foreground">
-                    Design · Documentation · Details
-                  </p>
+                <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
+                  <img src={home1} alt="Portrait" className="h-48 w-48 object-cover" />
+                  <div className="bg-background/95 px-4 py-2">
+                    <p className="label text-xs text-muted-foreground">Portrait</p>
+                  </div>
                 </div>
               </div>
-              <div className="absolute right-8 top-16 animate-float-delayed">
-                <div className="border border-hairline bg-background px-6 py-4 shadow-lg">
-                  <Label accent>Graphics</Label>
-                  <p className="label mt-2 text-xs text-muted-foreground">
-                    Illustration · Brand · Editorial
-                  </p>
+              <div className="absolute right-0 top-20 animate-float-delayed">
+                <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
+                  <img src={home2} alt="Designed House" className="h-56 w-56 object-cover" />
+                  <div className="bg-background/95 px-4 py-2">
+                    <p className="label text-xs text-muted-foreground">Designed House</p>
+                  </div>
                 </div>
               </div>
-              <div className="absolute left-12 bottom-8 animate-float-slow">
-                <div className="border border-hairline bg-background px-6 py-4 shadow-lg">
-                  <Label accent>Video</Label>
-                  <p className="label mt-2 text-xs text-muted-foreground">
-                    Editing · Motion · Content
-                  </p>
+              <div className="absolute left-16 -bottom-8 animate-float-slow">
+                <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
+                  <img src={home3} alt="Interior Design" className="h-40 w-40 object-cover" />
+                  <div className="bg-background/95 px-4 py-2">
+                    <p className="label text-xs text-muted-foreground">Interior Design</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -116,7 +119,7 @@ function Home() {
         items={[
           { image: projects[0]!.cover, caption: projects[0]!.name },
           { image: detailSamples[0]!.image, caption: detailSamples[0]!.title },
-          { image: detailSamples[2]!.image, caption: detailSamples[2]!.title },
+          { image: projects[1]!.cover, caption: projects[1]!.name },
         ]}
       />
 
