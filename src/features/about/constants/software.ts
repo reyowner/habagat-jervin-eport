@@ -29,4 +29,3 @@ export const SOFTWARE: SoftwareCategory[] = [
     software: ["Behance", "Canva"],
   },
 ];
-

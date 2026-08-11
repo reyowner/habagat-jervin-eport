@@ -38,8 +38,8 @@ function Video() {
             Video &amp; content creation.
           </h1>
           <p className="mt-8 max-w-xl text-muted-foreground">
-            Editing, motion and content direction — from long-form documentary cuts to
-            fast vertical social edits.
+            Editing, motion and content direction — from long-form documentary cuts to fast vertical
+            social edits.
           </p>
         </div>
       </section>
@@ -66,7 +66,9 @@ function Video() {
                 </div>
                 <div>
                   <Label accent>My Role</Label>
-                  <p className="text-sm text-muted-foreground">Coyha — Stream Engineer, Video Editor & Graphics Designer</p>
+                  <p className="text-sm text-muted-foreground">
+                    Coyha — Stream Engineer, Video Editor & Graphics Designer
+                  </p>
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
@@ -78,15 +80,59 @@ function Video() {
 
             {/* Platforms Grid */}
             <div>
-              <Label accent className="mb-6 block">Platforms</Label>
+              <Label accent className="mb-6 block">
+                Platforms
+              </Label>
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
-                  { platform: "YouTube", handle: "@Coy_ha", url: "https://www.youtube.com/@Coy_ha", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]", role: "My Channel" },
-                  { platform: "TikTok", handle: "@coy_ha", url: "https://www.tiktok.com/@coy_ha", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]", role: "My Channel" },
-                  { platform: "YouTube", handle: "@TortaLongTTV", url: "https://www.youtube.com/@TortaLongTTV", icon: "/icons8-youtube-48.png", color: "hover:border-[#FF0000]", role: "Client Channel" },
-                  { platform: "TikTok", handle: "@tortalong_tv", url: "https://www.tiktok.com/@tortalong_tv?lang=en", icon: "/icons8-tiktok-48.png", color: "hover:border-[#000000]", role: "Client Channel" },
-                  { platform: "Facebook", handle: "TortaLongTTV", url: "https://www.facebook.com/TorTalongTTV", icon: "/icons8-facebook-48.png", color: "hover:border-[#1877F2]", role: "Client Channel" },
-                  { platform: "Twitch", handle: "tortalong_tv", url: "https://www.twitch.tv/tortalong_tv", icon: "/icons8-twitch-48.png", color: "hover:border-[#9146FF]", role: "Client Channel" },
+                  {
+                    platform: "YouTube",
+                    handle: "@Coy_ha",
+                    url: "https://www.youtube.com/@Coy_ha",
+                    icon: "/icons8-youtube-48.png",
+                    color: "hover:border-[#FF0000]",
+                    role: "My Channel",
+                  },
+                  {
+                    platform: "TikTok",
+                    handle: "@coy_ha",
+                    url: "https://www.tiktok.com/@coy_ha",
+                    icon: "/icons8-tiktok-48.png",
+                    color: "hover:border-[#000000]",
+                    role: "My Channel",
+                  },
+                  {
+                    platform: "YouTube",
+                    handle: "@TortaLongTTV",
+                    url: "https://www.youtube.com/@TortaLongTTV",
+                    icon: "/icons8-youtube-48.png",
+                    color: "hover:border-[#FF0000]",
+                    role: "Client Channel",
+                  },
+                  {
+                    platform: "TikTok",
+                    handle: "@tortalong_tv",
+                    url: "https://www.tiktok.com/@tortalong_tv?lang=en",
+                    icon: "/icons8-tiktok-48.png",
+                    color: "hover:border-[#000000]",
+                    role: "Client Channel",
+                  },
+                  {
+                    platform: "Facebook",
+                    handle: "TortaLongTTV",
+                    url: "https://www.facebook.com/TorTalongTTV",
+                    icon: "/icons8-facebook-48.png",
+                    color: "hover:border-[#1877F2]",
+                    role: "Client Channel",
+                  },
+                  {
+                    platform: "Twitch",
+                    handle: "tortalong_tv",
+                    url: "https://www.twitch.tv/tortalong_tv",
+                    icon: "/icons8-twitch-48.png",
+                    color: "hover:border-[#9146FF]",
+                    role: "Client Channel",
+                  },
                 ].map((item) => (
                   <a
                     key={item.platform + item.handle}
@@ -96,12 +142,20 @@ function Video() {
                     className={`group relative overflow-hidden border border-hairline bg-background p-4 transition-all duration-300 hover:scale-105 hover:shadow-lg ${item.color}`}
                   >
                     <div className="flex items-center gap-4">
-                      <img src={item.icon} alt={item.platform} className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
+                      <img
+                        src={item.icon}
+                        alt={item.platform}
+                        className="w-10 h-10 transition-transform duration-300 group-hover:scale-110"
+                      />
                       <div className="flex-1 min-w-0">
                         <p className="label text-muted-foreground text-xs">{item.platform}</p>
-                        <p className="text-sm font-medium group-hover:text-accent transition-colors truncate">{item.handle}</p>
+                        <p className="text-sm font-medium group-hover:text-accent transition-colors truncate">
+                          {item.handle}
+                        </p>
                       </div>
-                      <span className="label text-xs text-muted-foreground bg-hairline px-2 py-1">{item.role}</span>
+                      <span className="label text-xs text-muted-foreground bg-hairline px-2 py-1">
+                        {item.role}
+                      </span>
                     </div>
                   </a>
                 ))}

@@ -14,7 +14,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >
-      <Link to="/architecture/$slug" params={{ slug: project.slug }} className="group block min-w-0 overflow-hidden">
+      <Link
+        to="/architecture/$slug"
+        params={{ slug: project.slug }}
+        className="group block min-w-0 overflow-hidden"
+      >
         <img
           src={project.cover}
           alt={project.name}

@@ -43,7 +43,7 @@ function Home() {
         <div className="blueprint-grid pointer-events-none absolute inset-0 opacity-60" />
         <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-px bg-hairline lg:block" />
 
-        <div className="relative mx-auto grid max-w-[1600px] gap-14 px-5 pb-20 pt-16 sm:px-8 lg:grid-cols-[3fr_1fr] lg:gap-16 lg:px-12 lg:pb-28 lg:pt-24">
+        <div className="relative mx-auto grid max-w-[1600px] gap-14 px-5 pb-20 pt-16 sm:px-8 lg:grid-cols-[2.5fr_1.5fr] lg:gap-16 lg:px-12 lg:pb-28 lg:pt-24">
           <div className="reveal min-w-0">
             <div className="flex flex-wrap items-center gap-4">
               <Label accent>ARCH · GFX · VIDEO / 001</Label>
@@ -58,9 +58,8 @@ function Home() {
             </h1>
 
             <p className="mt-10 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Helping people produce strategic architectural designs,
-              with the goal of enhancing people's lives and boosting
-              the productivity and efficiency of their businesses.
+              Helping people produce strategic architectural designs, with the goal of enhancing
+              people's lives and boosting the productivity and efficiency of their businesses.
             </p>
 
             <div className="mt-12 flex flex-wrap gap-4">
@@ -82,26 +81,38 @@ function Home() {
           <div className="relative min-w-0">
             <div className="relative h-[500px]">
               <div className="absolute left-0 top-0 animate-float">
-                <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
-                  <img src={home1} alt="Portrait" className="h-48 w-48 object-cover" />
+                <div className="min-w-58 max-w-58 overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
+                  <img src={home1} alt="Portrait" className="aspect-square w-full object-cover" />
                   <div className="bg-background/95 px-4 py-2">
-                    <p className="label text-xs text-muted-foreground">Me</p>
+                    <p className="label break-words text-xs text-muted-foreground">Me</p>
                   </div>
                 </div>
               </div>
               <div className="absolute right-0 top-20 animate-float-delayed">
-                <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
-                  <img src={home2} alt="Designed House" className="h-56 w-56 object-cover" />
+                <div className="min-w-62 max-w-62 overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
+                  <img
+                    src={home2}
+                    alt="Designed House"
+                    className="aspect-square w-full object-cover"
+                  />
                   <div className="bg-background/95 px-4 py-2">
-                    <p className="label text-xs text-muted-foreground">Residential Project</p>
+                    <p className="label break-words text-xs text-muted-foreground">
+                      Residential Project
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="absolute left-16 -bottom-8 animate-float-slow">
-                <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
-                  <img src={home3} alt="Interior Design" className="h-40 w-40 object-cover" />
+              <div className="absolute left-14 -bottom-15 animate-float-slow">
+                <div className="min-w-56 max-w-56 overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
+                  <img
+                    src={home3}
+                    alt="Interior Design"
+                    className="aspect-square w-full object-cover"
+                  />
                   <div className="bg-background/95 px-4 py-2">
-                    <p className="label text-xs text-muted-foreground">Architectural Interior</p>
+                    <p className="label break-words text-xs text-muted-foreground">
+                      Architectural Interior
+                    </p>
                   </div>
                 </div>
               </div>

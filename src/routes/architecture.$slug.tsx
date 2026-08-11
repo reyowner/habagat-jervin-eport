@@ -45,9 +45,7 @@ function ProjectPage() {
           <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
             <div className="min-w-0">
               <Label accent>{project.code}</Label>
-              <h1 className="display mt-6 text-[clamp(2.5rem,6vw,5rem)]">
-                {project.name}
-              </h1>
+              <h1 className="display mt-6 text-[clamp(2.5rem,6vw,5rem)]">{project.name}</h1>
             </div>
             <dl className="grid grid-cols-2 gap-y-6 self-end border-t border-hairline pt-6">
               {[
@@ -67,11 +65,7 @@ function ProjectPage() {
       </section>
 
       <section className="border-b border-hairline">
-        <img
-          src={project.cover}
-          alt={project.name}
-          className="aspect-[16/9] w-full object-cover"
-        />
+        <img src={project.cover} alt={project.name} className="aspect-[16/9] w-full object-cover" />
       </section>
 
       <section className="border-b border-hairline">

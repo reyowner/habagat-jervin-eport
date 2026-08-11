@@ -16,14 +16,10 @@ export function ArchitecturePDFViewer({ name }: ArchitecturePDFViewerProps) {
         aria-label="Architecture Portfolio PDF"
       >
         <div className="flex h-full flex-col items-center justify-center gap-6 bg-paper p-8 text-center">
-          <p className="label text-paper-foreground">
-            Preview unavailable — open the portfolio
-          </p>
+          <p className="label text-paper-foreground">Preview unavailable — open the portfolio</p>
         </div>
       </object>
-      <span className="label absolute -top-6 left-0 text-accent">
-        ARCH / PDF
-      </span>
+      <span className="label absolute -top-6 left-0 text-accent">ARCH / PDF</span>
     </div>
   );
 }

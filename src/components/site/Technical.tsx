@@ -10,9 +10,7 @@ export function Label({
   className?: string;
 }) {
   return (
-    <span
-      className={`label ${accent ? "text-accent" : "text-muted-foreground"} ${className}`}
-    >
+    <span className={`label ${accent ? "text-accent" : "text-muted-foreground"} ${className}`}>
       {children}
     </span>
   );
@@ -40,9 +38,7 @@ export function SectionHeader({
         <h2 className="display mt-4 text-3xl sm:text-5xl">{title}</h2>
       </div>
       {meta ? (
-        <span className="label hidden shrink-0 pb-2 text-muted-foreground sm:inline">
-          {meta}
-        </span>
+        <span className="label hidden shrink-0 pb-2 text-muted-foreground sm:inline">{meta}</span>
       ) : null}
     </div>
   );

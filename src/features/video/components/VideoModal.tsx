@@ -35,12 +35,7 @@ export function VideoModal({ active, onClose }: VideoModalProps) {
           </button>
         </div>
         <div className="mt-5 flex items-center justify-center bg-muted">
-          <video
-            src={active.video}
-            controls
-            autoPlay
-            className="max-h-[65vh] w-full"
-          >
+          <video src={active.video} controls autoPlay className="max-h-[65vh] w-full">
             Your browser does not support the video tag.
           </video>
         </div>

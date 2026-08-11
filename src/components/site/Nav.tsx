@@ -18,9 +18,7 @@ export function Nav() {
     <header className="sticky top-0 z-50 border-b border-hairline bg-background">
       <div className="mx-auto grid max-w-[1600px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:px-8 lg:px-12">
         <Link to="/" className="min-w-0">
-          <span className="display block truncate text-sm uppercase tracking-[0.2em]">
-            {NAME}
-          </span>
+          <span className="display block truncate text-sm uppercase tracking-[0.2em]">{NAME}</span>
           <span className="label mt-1 block text-muted-foreground">
             Architecture · Graphics · Video
           </span>

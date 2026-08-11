@@ -19,7 +19,7 @@ export function CollapsibleCategory({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between text-left"
+        className="flex w-full cursor-pointer items-center justify-between text-left"
       >
         <span className="text-sm font-medium text-foreground">{category}</span>
         <span className="label text-muted-foreground">{isOpen ? "−" : "+"}</span>
@@ -27,10 +27,7 @@ export function CollapsibleCategory({
       {isOpen && (
         <div className="mt-3 flex flex-wrap gap-2">
           {items.map((item) => (
-            <span
-              key={item}
-              className="label border border-hairline px-3 py-1.5 text-xs"
-            >
+            <span key={item} className="label border border-hairline px-3 py-1.5 text-xs">
               {item}
             </span>
           ))}
