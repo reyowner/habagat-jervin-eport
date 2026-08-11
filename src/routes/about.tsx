@@ -45,14 +45,14 @@ function About() {
 
       <section className="border-b border-hairline">
         <div className="mx-auto grid max-w-[1600px] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1fr_1.3fr] lg:gap-16 lg:px-12">
-          <div className="relative min-w-0 max-w-[480px]">
+          <div className="relative min-w-0 max-w-[580px]">
             <img
               src={images.portrait}
               alt={`Portrait of ${NAME}`}
               loading="lazy"
               width={400}
               height={480}
-              className="w-full object-cover grayscale"
+              className="w-full object-cover"
             />
             <span className="label absolute -top-6 left-0 text-accent">FIG. 01 / PORTRAIT</span>
           </div>
