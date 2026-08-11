@@ -59,12 +59,12 @@ function About() {
 
           <div className="min-w-0">
             <p className="text-xl leading-relaxed sm:text-2xl">
-              I&apos;m {NAME} — a Filipino architect, 3D visualizer, creative designer,
+              {NAME} — a Filipino architect, 3D visualizer, creative designer,
               illustrator, and multimedia designer based in Bataan, Philippines.
             </p>
             <div className="mt-8 space-y-6 text-muted-foreground">
               <p>
-                I&apos;m a passionate freelance architect and co-founder of HACARA+ Architects,
+                A passionate freelance architect and co-founder of HACARA+ Architects,
                 dedicated to creating transformative designs that enhance people&apos;s lives
                 and contribute to the productivity and efficiency of businesses.
               </p>

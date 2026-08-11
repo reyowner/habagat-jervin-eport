@@ -85,7 +85,7 @@ function Home() {
                 <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
                   <img src={home1} alt="Portrait" className="h-48 w-48 object-cover" />
                   <div className="bg-background/95 px-4 py-2">
-                    <p className="label text-xs text-muted-foreground">Portrait</p>
+                    <p className="label text-xs text-muted-foreground">Me</p>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ function Home() {
                 <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
                   <img src={home2} alt="Designed House" className="h-56 w-56 object-cover" />
                   <div className="bg-background/95 px-4 py-2">
-                    <p className="label text-xs text-muted-foreground">Designed House</p>
+                    <p className="label text-xs text-muted-foreground">Residential Project</p>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ function Home() {
                 <div className="overflow-hidden rounded-2xl border-2 border-hairline bg-background shadow-2xl">
                   <img src={home3} alt="Interior Design" className="h-40 w-40 object-cover" />
                   <div className="bg-background/95 px-4 py-2">
-                    <p className="label text-xs text-muted-foreground">Interior Design</p>
+                    <p className="label text-xs text-muted-foreground">Architectural Interior</p>
                   </div>
                 </div>
               </div>
