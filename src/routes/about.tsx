@@ -113,10 +113,19 @@ function About() {
             {EXPERIENCE.map((e) => (
               <li
                 key={e.role}
-                className="grid gap-2 border-t border-hairline py-6 sm:grid-cols-[220px_1fr_auto] sm:items-baseline sm:gap-8"
+                className="grid gap-2 border-t border-hairline py-6 sm:grid-cols-[260px_1fr_auto] sm:items-baseline sm:gap-8"
               >
-                <span className="label text-muted-foreground">{e.year}</span>
-                <span className="display text-xl">{e.place}</span>
+                <span className="label text-muted-foreground whitespace-nowrap">{e.year}</span>
+                <span className="display text-xl">
+                  <span className="display text-xl mx-4">{e.company}</span>
+                  {e.location && (
+                    <>
+                      {"  -  "}
+                      <img src="/icons8-location-pin-48.png" alt="" className="inline w-5 h-5 ml-2 mx-1" />
+                      {e.location}
+                    </>
+                  )}
+                </span>
                 <span className="label text-muted-foreground">{e.role}</span>
               </li>
             ))}

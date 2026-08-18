@@ -1,48 +1,57 @@
 export interface Experience {
   year: string;
   role: string;
-  place: string;
+  company: string;
+  location?: string;
 }
 
 export const EXPERIENCE: Experience[] = [
   {
     year: "2021 — Present",
     role: "Freelance Architect",
-    place: "HACARA+ Architects – Bataan, PH",
+    company: "HACARA+ Architects",
+    location: "Bataan, PH",
   },
   {
     year: "April 2025 — June 2026",
     role: "Architectural Designer",
-    place: "Raynor Redeveloped LLC – Portland OR",
+    company: "Raynor Redeveloped LLC",
+    location: "Portland OR",
   },
   {
     year: "July 2024 — February 2025",
     role: "Architect | Creative Designer",
-    place: "Eichholtz Long Island – New York",
+    company: "Eichholtz Long Island",
+    location: "New York",
   },
   {
     year: "August 2024 — February 2026",
     role: "Architectural Instructor",
-    place: "Bataan Heroes College – Bataan, PH",
+    company: "Bataan Heroes College",
+    location: "Bataan, PH",
   },
   {
-    year: "2019 — 2022",
+    year: "November 2019 — May 2025",
     role: "Architectural Designer & Illustrator",
-    place: "Upwork, Fiver – Remote Work",
+    company: "Upwork, Fiver",
+    location: "Remote Work",
   },
   {
     year: "June 2020 — December 2021",
     role: "Content Producer & Stream Engineer",
-    place: "When in Manila + Webfunc.site – Remote Work",
+    company: "When in Manila + Webfunc.site",
+    location: "Remote Work",
   },
   {
     year: "September 2018 — June 2019",
     role: "Architecture Intern / Project Coordinator",
-    place: "Peralta Burgos Design and Construction – Bataan, PH",
+    company: "Peralta Burgos Design and Construction",
+    location: "Bataan, PH",
   },
   {
     year: "January 2015 — October 2021",
     role: "Graphic Designer & Illustrator",
-    place: "JSJ Digital Printing – Bataan, PH",
+    company: "JSJ Digital Printing",
+    location: "Bataan, PH",
   },
 ];
