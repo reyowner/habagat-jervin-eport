@@ -60,25 +60,18 @@ function About() {
           <div className="min-w-0">
             <p className="text-xl leading-relaxed sm:text-2xl">
               {NAME} — a Filipino architect, 3D visualizer, creative designer, illustrator, and
-              multimedia designer based in Bataan, Philippines.
+              multimedia designer with 6+ years of experience across architectural design, space
+              planning, 3D visualization, graphic design, and multimedia content.
             </p>
             <div className="mt-8 space-y-6 text-muted-foreground">
               <p>
-                A passionate freelance architect and co-founder of HACARA+ Architects, dedicated to
-                creating transformative designs that enhance people&apos;s lives and contribute to
-                the productivity and efficiency of businesses.
+                Co-founder of HACARA+ Architects, dedicated to creating thoughtful, impactful design
+                solutions that balance creativity, functionality, aesthetics, and technical precision.
               </p>
               <p>
-                My work combines architectural design, space planning, conceptualization, 3D
-                modeling, architectural visualization, graphic design, illustration, and multimedia.
-                I aim to create thoughtful and impactful design solutions that elevate the lives of
-                their users while balancing creativity, functionality, aesthetics, and technical
-                considerations.
-              </p>
-              <p>
-                With a strong background in both architecture and visual communication, I transform
-                architectural ideas, plans, and references into compelling visualizations,
-                presentations, and design solutions.
+                Combines a strong architectural foundation with visual communication skills to turn
+                ideas, plans, and references into compelling visualizations, presentations, and design
+                solutions.
               </p>
             </div>
 

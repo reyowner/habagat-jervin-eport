@@ -175,7 +175,7 @@ function Contact() {
                 ["Phone", "+63 926 116 1347", "tel:+639261161347", "/icons8-call-30.png"],
                 [
                   "Location",
-                  "Mariveles, Bataan, Philippines",
+                  "Bataan, Philippines",
                   undefined,
                   "/icons8-location-48.png",
                 ],
