@@ -5,27 +5,31 @@ export interface SoftwareCategory {
 
 export const SOFTWARE: SoftwareCategory[] = [
   {
-    category: "Architecture & CAD",
-    software: ["Autodesk AutoCAD"],
+    category: "Architecture & CAD/BIM",
+    software: ["AutoCAD", "Revit"],
   },
   {
     category: "3D Modeling",
-    software: ["SketchUp"],
+    software: ["SketchUp", "3ds Max"],
   },
   {
     category: "Rendering",
-    software: ["Lumion", "V-Ray"],
+    software: ["Lumion", "V-Ray", "Enscape", "D5"],
   },
   {
     category: "Graphic Design",
-    software: ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
+    software: ["Adobe Photoshop", "Adobe InDesign"],
   },
   {
     category: "Video Editing",
     software: ["Adobe Premiere Pro"],
   },
   {
-    category: "Online Platforms",
+    category: "Documentation",
+    software: ["Microsoft Office Suite"],
+  },
+  {
+    category: "Platforms",
     software: ["Behance", "Canva"],
   },
 ];
