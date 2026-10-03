@@ -84,7 +84,7 @@ export function Footer() {
           <span className="label text-muted-foreground">
             © 2026 PERSONALIZED E-PORTFOLIO — By{" "}
             <a
-              href="https://e-portfolio-reyowners-projects.vercel.app/"
+              href="https://main-portfolio-six-mu.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-1 text-foreground underline decoration-foreground/30 underline-offset-4 transition-colors duration-200 hover:decoration-foreground"
